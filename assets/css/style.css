@@ -237,23 +237,6 @@ h3 {
     min-height: 44px;  /* Touch-friendly size (iPhone standard) */
 }
 
-/* Range input */
-.field-grid input[type="range"] {
-
-    /* File input styling */
-    .field-grid input[type="file"] {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        border: 2px dashed #66be02;
-        border-radius: 12px;
-        background: #f7fff9;
-        cursor: pointer;
-        font-size: 0.9rem;
-        min-height: 50px;
-    }
-    accent-color: var(--accent);  /* Green color for filled area */
-}
 
 button {
     border: 0;
@@ -300,12 +283,28 @@ button:hover,
     box-shadow: 0 0 0 3px rgba(0, 168, 107, 0.2);
 }
 
-.field-grid .btn-sm.delete-btn {
-    justify-self: end;
-    width: auto;
-    min-height: auto;
-    padding: 4px 10px;
-    font-size: 0.82rem;
+
+.option-btn {
+    width: 100%;
+    min-height: 44px;  /* Touch-friendly height */
+}
+
+#cardColor {
+    min-height: 36px;
+    padding: 2px 4px;
+}
+
+#backgroundButton {
+    min-height: 36px;
+    padding: 8px 12px;
+    font-size: 0.86rem;
+}
+
+/* Grid of background thumbnails inside the modal */
+.background-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
 }
 
 
