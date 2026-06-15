@@ -30,6 +30,17 @@ const previewCompany = document.getElementById("previewCompany");
 const previewEmail = document.getElementById("previewEmail");
 const previewPhone = document.getElementById("previewPhone");
 
+// helper functions
+function show(element) {
+  element.classList.remove"hidden"
+
+function hide(element) {
+  element.classList.add"hidden"
+
+function setStatus(message) {
+  statusText.textContent = message;
+
+
 // update the live preview text
 function updatePreview() {
   const name = nameInput.value.trim();
