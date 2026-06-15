@@ -77,7 +77,7 @@ function updatePreview() {
   }
 
   // Title and company are optional, so hide them when empty
-  
+
   if (title === "") {
     hide(previewTitle);
   } else {
@@ -92,3 +92,25 @@ function updatePreview() {
     show(previewCompany);
   }
 }
+// logo stuff
+
+// Move the logo to the left or right side of the card
+function updateLogoPosition() {
+  if (logoPosition.value === "left") {
+    previewLogo.classList.remove("logo-right");
+    previewLogo.classList.add("logo-left");
+  } else {
+    previewLogo.classList.remove("logo-left");
+    previewLogo.classList.add("logo-right");
+  } 
+}
+
+// Read the chosen image file and show it on the card
+function showLogo() {
+  const file = logoUpload.files[0];
+
+  if (file === undefined) {
+    hide(previewLogo);
+    previewLogo.src = "";
+    return;
+  }
