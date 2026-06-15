@@ -54,10 +54,24 @@ function updatePreview() {
     previewName.textContent = name;
   }
 
+  if (email === "") {
+    previewEmail.textContent = "Email";
+    } else {
+    previewEmail.textContent = email;
+  }
+
+  // Title and company are optional, so hide them when empty
+
   if (title === "") {
     hide(previewTitle);
   } else {
     previewTitle.textContent = title;
     show(previewTitle);
   } 
-  
+  if (company === "") {
+    hide(previewCompany);
+  } else {
+    previewCompany.textContent = company;
+    show(previewCompany);
+  }
+    
