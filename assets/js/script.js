@@ -11,3 +11,12 @@ const phoneInput = document.getElementById("phone");
 const logoUpload = document.getElementById("logoUpload");
 const logoPosition = document.getElementById("logoPosition");
 const previewLogo = document.getElementById("previewLogo");
+
+// Background controls
+const cardColor = document.getElementById("cardColor");
+let selectedBackground = "";
+
+// Submit button and status message
+const createCardButton = document.getElementById("createCardButton");
+const downloadButton = document.getElementById("downloadButton");
+
