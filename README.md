@@ -184,7 +184,7 @@ Live Preview panel (always visible on the right)
    ```
 
 3. Go to **Settings → Pages**, set source to `main` branch, click **Save**
-4. Your site will be live at `https://YOUR_USERNAME.github.io/business-card-generator/`
+4. My site will be live at `https://anasztazia12.github.io/business-card-generator/`
 **Steps to deploy:**
 
 ## Plane 5 — Surface
