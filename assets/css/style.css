@@ -173,72 +173,41 @@ body {
 /* Page title (form page) */
 h1 {
     margin: 1;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem);
+    font-family: "Space Grotesk", sans-serif;                    /* Bold modern font */
+    font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem);            /* Responsive size */
 }
 
-/* Section and card headings */
 h2,
 h3 {
     margin: 0;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Space Grotesk", sans-serif;  /* Bold modern font */
 }
 
-/* Muted helper text below heading */
 .subtitle {
     margin: 10px 0 8px;
-    color: var(--muted);
+    color: var(--muted);        /* Medium green */
     font-size: 0.96rem;
-}
+} /* Text styles */
 
-/* Two-column label + input grid */
 .field-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 
-/* Prevent grid children from stretching unexpectedly */
 .field-grid > * {
     min-height: auto;
 }
-
-/* Form element takes full panel width */
+/* Ensure form displays content */
 #businessCardForm {
     display: block;
     min-height: auto;
     width: 100%;
 }
-
-/* Base button reset */
-button {
-    border: 0;
-    border-radius: 12px;
-    padding: 11px 16px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 0.92rem;
-    font-weight: 700;
-    cursor: pointer;
-
-}
-
-/* Bootstrap-style buttons */
-.btn {
-    border-radius: 12px;
-    padding: 11px 16px;
-    min-height: 44px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 0.92rem;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Form labels */
 .field-grid label {
     margin-top: 8px;
-    font-weight: 700;           
+    font-weight: 700;           /* Bold labels */
     font-size: 0.92rem;
     min-height: 1em;
     display: block;
@@ -255,6 +224,76 @@ button {
     color: #0d3c2b;
     background: #f7fff9;
     box-shadow: inset 0 1px 3px rgba(11, 75, 51, 0.08);  /* Subtle inner shadow */
+}
+
+.field-grid input.input-error {
+    border-color: #d1495b;
+    box-shadow: 0 0 0 2px rgba(209, 73, 91, 0.16);
+}
+
+/* Color input */
+.field-grid input[type="color"] {
+    padding: 4px;
+    min-height: 44px;  /* Touch-friendly size (iPhone standard) */
+}
+
+/* Range input */
+.field-grid input[type="range"] {
+
+    /* File input styling */
+    .field-grid input[type="file"] {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: 2px dashed #66be02;
+        border-radius: 12px;
+        background: #f7fff9;
+        cursor: pointer;
+        font-size: 0.9rem;
+        min-height: 50px;
+    }
+    accent-color: var(--accent);  /* Green color for filled area */
+}
+
+button {
+    border: 0;
+    border-radius: 12px;
+    padding: 11px 16px;
+    font-family: "Space Grotesk", sans-serif;      /* Bold font */
+    font-size: 0.92rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        background-color 0.22s ease,
+        filter 0.22s ease;
+}
+
+/* Bootstrap-style buttons */
+.btn {
+    border-radius: 12px;
+    padding: 11px 16px;
+    min-height: 44px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        background-color 0.22s ease,
+        border-color 0.22s ease,
+        color 0.22s ease,
+        filter 0.22s ease;
+}
+
+/* Button hover */
+button:hover,
+.btn:hover {
+    transform: translateY(-2px) scale(1.01);  /* Move up 2px and scale 101% */
 }
 
 
