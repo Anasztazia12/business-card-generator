@@ -114,6 +114,16 @@ function showLogo() {
     previewLogo.src = "";
     return;
   }
-  show(previewLogo);
-  updateLogoPosition();
+
+  const reader = new FileReader()
+
+  reader.addEventListener("load", function () {
+    previewLogo.src = reader.result;
+    show(previewLogo);
+    updateLogoPosition();
+  });
+
+  reader.readAsDataURL(file);
 }
+
+
