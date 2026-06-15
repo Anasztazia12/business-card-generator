@@ -357,6 +357,20 @@ button:hover,
     align-self: start;
 }
 
+/* Business card preview */
+.business-card {
+    position: relative;
+    width: min(100%, 480px);           
+    min-height: 270px;                 
+    padding: 22px;
+    padding-top: 110px;                
+    border-radius: 20px;
+    border: 1px solid rgba(196, 243, 220, 0.94);
+    box-shadow: 0 20px 30px rgba(6, 96, 62, 0.26);
+    background-color: #ffffff;          
+}
+
+
 
 /* Footer box */
 footer {
