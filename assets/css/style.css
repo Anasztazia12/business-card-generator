@@ -391,6 +391,14 @@ button:hover,
     display: none;
 }
 
+/* Buttons at the bottom of the form */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
 
 
 /* Footer box */
