@@ -20,4 +20,5 @@ let selectedBackground = "";
 const createCardButton = document.getElementById("createCardButton");
 const downloadButton = document.getElementById("downloadButton");
 const fontColorInput = document.getElementById("fontColor");
+const statusText = document.getElementById("statusText");
 
