@@ -149,5 +149,41 @@ body {
     background-color: rgba(0, 165, 145, 0.24);
     transform: scale(1.06);
 }
+h1 {
+    margin: 1;
+    font-family: "Space Grotesk", sans-serif;                    
+    font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem);            
+}
 
+h2,
+h3 {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;  
+}
+
+.subtitle {
+    margin: 10px 0 8px;
+    color: var(--muted);        
+    font-size: 0.96rem;
+} 
+
+/* Footer */
+
+/* Footer box */
+footer {
+    width: min(1220px, 94vw);
+    margin: 14px auto 0;
+    padding: 12px 0;
+    border-radius: 12px;
+    text-align: center;
+    background: linear-gradient(
+        125deg,
+        #00bb75 0%,
+        #00a86b 52%,
+        #008f5a 100%
+    );
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 0.9rem;
+}
 
