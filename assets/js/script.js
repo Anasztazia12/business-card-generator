@@ -22,3 +22,10 @@ const downloadButton = document.getElementById("downloadButton");
 const fontColorInput = document.getElementById("fontColor");
 const statusText = document.getElementById("statusText");
 
+// Preview elements
+const cardPreview = document.getElementById("businessCardPreview");
+const previewName = document.getElementById("previewName");
+const previewTitle = document.getElementById("previewTitle");
+const previewCompany = document.getElementById("previewCompany");
+const previewEmail = document.getElementById("previewEmail");
+const previewPhone = document.getElementById("previewPhone");
