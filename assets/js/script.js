@@ -32,14 +32,16 @@ const previewPhone = document.getElementById("previewPhone");
 
 // helper functions
 function show(element) {
-  element.classList.remove"hidden"
+  element.classList.remove("hidden");
+}
 
 function hide(element) {
-  element.classList.add"hidden"
+  element.classList.add("hidden");
+}
 
 function setStatus(message) {
   statusText.textContent = message;
-
+}
 
 // update the live preview text
 function updatePreview() {
@@ -76,4 +78,43 @@ function updatePreview() {
     previewCompany.textContent = company;
     show(previewCompany);
   }
+}
+
+// update the live preview text
+
+function updatePreview() {
+  const name = nameInput.value.trim();
+  const title = titleInput.value.trim();
+  const company = companyInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  // Show what the user typed, or a placeholder if the field is empty
+  if (name === "") {
+    previewName.textContent = "Name";
+  } else {
+    previewName.textContent = name;
+  }
+    if (title === "") {
+    hide(previewTitle);
+    } else {    
+        previewTitle.textContent = title;
+        show(previewTitle);
+    }
+    if (company === "") {
+    hide(previewCompany);
+    } else {    
+        previewCompany.textContent = company;
+        show(previewCompany);
+    }
+    if (email === "") {
+    previewEmail.textContent = "Email";
+    } else {
+    previewEmail.textContent = email;
+    }
+    if (phone === "") {
+    previewPhone.textContent = "Phone";
+    } else {
+    previewPhone.textContent = phone;
+    }   
 }
