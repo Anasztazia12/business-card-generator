@@ -50,8 +50,8 @@ How similar "business card generator" apps work, especially how they update the 
 - [Plane 4 — Skeleton](#plane-4--skeleton)
 - [Plane 5 — Surface](#plane-5--surface)
 - [User Stories](#user-stories)
-- [Testing](#testing)
 - [Deployment](#deployment)
+
 ---
 
 ## Plane 1 — Strategy
@@ -165,3 +165,63 @@ Live Preview panel (always visible on the right)
 |                                                                   |
 |-------------------------------------------------------------------|
 ```
+
+**Responsive behaviour:**
+
+| Breakpoint | Layout |
+| --- | --- |
+| > 980px | Two-column (form left, preview right) |
+| ≤ 980px | Single column, preview stacked above form |
+| ≤ 480px | Tighter spacing, larger touch targets |
+
+---
+
+## Plane 5 — Surface
+
+*What does it look like?*
+
+**Colour palette:**
+
+| Role | Value |
+| --- | --- |
+| Primary green | `#66be02` |
+| Primary blue | `#0197c5` |
+| Dark text | `rgba(1, 38, 47, 0.9)` |
+| Teal accent | `rgba(8, 116, 122, 0.9)` |
+
+**Typography:**
+
+- Headings: Space Grotesk (600–700 weight)
+- Body / labels: Manrope (400–700 weight)
+
+**Visual decisions:**
+
+- Gradient title (green → blue) to draw attention to the app name
+- Fixed background image gives depth without interfering with card preview
+- Rounded corners and subtle shadow on the carousel for a modern feel
+
+---
+
+## User Stories
+
+| Role | Story | Accepted when |
+| --- | --- | --- |
+| Self-employed person | I want to generate a business card quickly | Card preview updates as I type |
+| Self-employed person | I want to customise colours and style | Background and font controls change the preview instantly |
+| Business professional | I want a clean, modern card | Default layout looks professional out of the box |
+| Business professional | I want to download my card | PDF export saves a file named after the user |
+
+---
+
+## Deployment
+
+The site is deployed via **GitHub Pages**.
+
+**Steps to deploy:**
+
+1. Push all files to the `main` branch on GitHub
+2. Go to **Settings → Pages**
+3. Set source to `main` branch, `/ (root)` folder
+4. Click Save — GitHub Pages publishes the site automatically
+
+**Live site:** *(add URL here once deployed)*

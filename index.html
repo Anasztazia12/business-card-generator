@@ -4,35 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Card Generator</title>
+
+  <!-- Google Fonts: Space Grotesk (heading) + Manrope (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- Main content area -->
 <main class="container py-5">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-10">
 
+      <!-- Welcome section -->
       <section id="welcome-page" class="panel text-center p-4 p-md-5">
 
+        <!-- Title, tagline and logo -->
         <div class="welcome-title-row">
           <h1 class="welcome-title">Digital Business Card Generator</h1>
           <p class="welcome-kicker">Where your digital identity begins</p>
           <img src="assets/images/logo.png" alt="Logo" class="welcome-logo">
         </div>
 
+        <!-- Navigation buttons -->
         <nav class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-4">
           <a href="index.html" class="btn btn-success">Home</a>
           <a href="form.html" class="btn btn-info text-white">Create Card</a>
         </nav>
 
+        <!-- Section heading -->
         <h2 class="welcome-section-title">Explore Our Designs</h2>
         <p class="welcome-description">Discover our curated background collection and find the perfect fit for your brand</p>
 
+        <!-- Background image carousel -->
         <div id="businessCardCarousel" class="carousel slide carousel-fade shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+
+          <!-- Dot indicators -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#businessCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#businessCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -40,6 +54,8 @@
             <button type="button" data-bs-target="#businessCardCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#businessCardCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
+
+          <!-- Slides -->
           <div class="carousel-inner rounded-4">
             <div class="carousel-item active" data-bs-interval="3500">
               <img src="assets/images/business-card.png" class="d-block w-100" alt="Business card example">
@@ -57,6 +73,8 @@
               <img src="assets/images/card-background3.png" class="d-block w-100" alt="Card background 3">
             </div>
           </div>
+
+          <!-- Prev / Next controls -->
           <button class="carousel-control-prev" type="button" data-bs-target="#businessCardCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -65,20 +83,22 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
+
+        </div><!-- end carousel -->
 
       </section>
     </div>
   </div>
 </main>
 
+<!-- Footer -->
 <footer class="footer">
   <p>@ 2026 Amethyst Nexalune. All rights reserved.</p>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
 <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-
