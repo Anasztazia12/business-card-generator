@@ -1,3 +1,4 @@
+/* CSS custom properties (colour palette, spacing, shadows) */
 :root {
     --ink: #012017;
     --muted: #02752e;
@@ -28,24 +29,25 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-/* Main layout */
+
+/* Main two-column layout (form + preview) */
 .app-layout {
     width: min(1220px, 94vw);
     margin: 28px auto;
     display: grid;
     grid-template-columns: 1.05fr 1fr;
     gap: 24px;
-    align-items: start;  
+    align-items: start;
 }
 
-/* Panels */
+/* Frosted-glass card container */
 .panel {
-    background: var(--surface);                    
-    backdrop-filter: blur(8px);                    
-    border: 1px solid var(--border);               
-    border-radius: var(--radius);                  
-    box-shadow: var(--shadow-soft);                
-    padding: 24px;                                 
+    background: var(--surface);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    padding: 24px;
 }
 
 /* Welcome page wrapper — centered, max 980px */
@@ -111,6 +113,8 @@ body {
     line-height: 1.45;
     color: rgba(1, 38, 47, 0.9);
 }
+
+/* Section heading above carousel */
 #welcome-page .welcome-section-title {
     margin: 0 0 12px;
     font-family: "Space Grotesk", sans-serif;
@@ -120,6 +124,7 @@ body {
     color: #0f5f64;
 }
 
+/* Descriptive text below section heading */
 #welcome-page .welcome-description {
     max-width: 62ch;
     margin: 0 auto 22px;
@@ -128,22 +133,27 @@ body {
     line-height: 1.65;
     color: rgba(1, 32, 23, 0.78);
 }
+
+/* Carousel max width */
 #welcome-page #businessCardCarousel {
     width: min(100%, 560px);
     margin: 0 auto;
 }
 
+/* Force 16:9 ratio on carousel images */
 #welcome-page #businessCardCarousel .carousel-inner img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
+/* Carousel prev/next button width */
 #welcome-page #businessCardCarousel .carousel-control-prev,
 #welcome-page #businessCardCarousel .carousel-control-next {
     width: 12%;
     opacity: 1;
 }
 
+/* Arrow icon — white circle, black arrow */
 #welcome-page #businessCardCarousel .carousel-control-prev-icon,
 #welcome-page #businessCardCarousel .carousel-control-next-icon {
     width: 2.5rem;
@@ -153,38 +163,63 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
+/* Arrow icon hover — teal tint + slight scale */
 #welcome-page #businessCardCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
 #welcome-page #businessCardCarousel .carousel-control-next:hover .carousel-control-next-icon {
     background-color: rgba(0, 165, 145, 0.24);
     transform: scale(1.06);
 }
+
+/* Page title (form page) */
 h1 {
     margin: 1;
-    font-family: "Space Grotesk", sans-serif;                    
-    font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem);            
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem);
 }
 
+/* Section and card headings */
 h2,
 h3 {
     margin: 0;
-    font-family: "Space Grotesk", sans-serif;  
+    font-family: "Space Grotesk", sans-serif;
 }
 
+/* Muted helper text below heading */
 .subtitle {
     margin: 10px 0 8px;
-    color: var(--muted);        
+    color: var(--muted);
     font-size: 0.96rem;
-} 
+}
 
+/* Two-column label + input grid */
+.field-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Prevent grid children from stretching unexpectedly */
+.field-grid > * {
+    min-height: auto;
+}
+
+/* Form element takes full panel width */
+#businessCardForm {
+    display: block;
+    min-height: auto;
+    width: 100%;
+}
+
+/* Base button reset */
 button {
     border: 0;
     border-radius: 12px;
     padding: 11px 16px;
-    font-family: "Space Grotesk", sans-serif;      /* Bold font */
+    font-family: "Space Grotesk", sans-serif;
     font-size: 0.92rem;
     font-weight: 700;
     cursor: pointer;
-    
+
 }
 
 /* Bootstrap-style buttons */
@@ -199,9 +234,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-
-
-/* Footer */
 
 /* Footer box */
 footer {
@@ -220,4 +252,3 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
-
