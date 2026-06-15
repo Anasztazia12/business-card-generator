@@ -13,16 +13,19 @@ const logoPosition = document.getElementById("logoPosition");
 const previewLogo = document.getElementById("previewLogo");
 
 // Background controls
+
 const cardColor = document.getElementById("cardColor");
 let selectedBackground = "";
 
 // Submit button and status message
+
 const createCardButton = document.getElementById("createCardButton");
 const downloadButton = document.getElementById("downloadButton");
 const fontColorInput = document.getElementById("fontColor");
 const statusText = document.getElementById("statusText");
 
 // Preview elements
+
 const cardPreview = document.getElementById("businessCardPreview");
 const previewName = document.getElementById("previewName");
 const previewTitle = document.getElementById("previewTitle");
@@ -31,6 +34,7 @@ const previewEmail = document.getElementById("previewEmail");
 const previewPhone = document.getElementById("previewPhone");
 
 // helper functions
+
 function show(element) {
   element.classList.remove("hidden");
 }
@@ -44,6 +48,7 @@ function setStatus(message) {
 }
 
 // update the live preview text
+
 function updatePreview() {
   const name = nameInput.value.trim();
   const title = titleInput.value.trim();
@@ -52,6 +57,7 @@ function updatePreview() {
   const phone = phoneInput.value.trim();
 
   // Show what the user typed, or a placeholder if the field is empty
+
   if (name === "") {
     previewName.textContent = "Name";
   } else {
@@ -59,62 +65,30 @@ function updatePreview() {
   }
 
   if (email === "") {
-    previewEmail.textContent = "Email";
-    } else {
+    previewEmail.textContent = "email@example.com";
+  } else {
     previewEmail.textContent = email;
   }
 
-  // Title and company are optional, so hide them when empty
+  if (phone === "") {
+    previewPhone.textContent = "+44 1234 567890";
+  } else {
+    previewPhone.textContent = phone;
+  }
 
+  // Title and company are optional, so hide them when empty
+  
   if (title === "") {
     hide(previewTitle);
   } else {
     previewTitle.textContent = title;
     show(previewTitle);
-  } 
+  }
+
   if (company === "") {
     hide(previewCompany);
   } else {
     previewCompany.textContent = company;
     show(previewCompany);
   }
-}
-
-// update the live preview text
-
-function updatePreview() {
-  const name = nameInput.value.trim();
-  const title = titleInput.value.trim();
-  const company = companyInput.value.trim();
-  const email = emailInput.value.trim();
-  const phone = phoneInput.value.trim();
-
-  // Show what the user typed, or a placeholder if the field is empty
-  if (name === "") {
-    previewName.textContent = "Name";
-  } else {
-    previewName.textContent = name;
-  }
-    if (title === "") {
-    hide(previewTitle);
-    } else {    
-        previewTitle.textContent = title;
-        show(previewTitle);
-    }
-    if (company === "") {
-    hide(previewCompany);
-    } else {    
-        previewCompany.textContent = company;
-        show(previewCompany);
-    }
-    if (email === "") {
-    previewEmail.textContent = "Email";
-    } else {
-    previewEmail.textContent = email;
-    }
-    if (phone === "") {
-    previewPhone.textContent = "Phone";
-    } else {
-    previewPhone.textContent = phone;
-    }   
 }
