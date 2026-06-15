@@ -12,10 +12,55 @@
 </head>
 <body>
 
-<h1>Digital Business Card Generator</h1>
+<main class="app-layout">
+
+  <!-- LEFT: Form -->
+  <section class="panel form-panel">
+
+    <h1>Digital Business Card Generator</h1>
 
     <nav class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-4">
       <a href="index.html" class="btn btn-success">Home</a>
       <a href="form.html" class="btn btn-info text-white">Create Card</a>
     </nav>
 
+    <p class="subtitle">Fill in your details and see your card update live on the right.</p>
+
+    <form id="businessCardForm" novalidate>
+
+      <div class="field-grid">
+
+        <!-- Basic info -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="e.g. John Smith" required>
+
+        <label for="company">Company (optional)</label>
+        <input type="text" id="company" placeholder="e.g. Brightline Studio">
+
+        <label for="title">Title (optional)</label>
+        <input type="text" id="title" placeholder="e.g. Marketing Manager">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="e.g. +44 1234 567890" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="e.g. john@company.com" required>
+
+        <!-- Logo -->
+        <label for="logoUpload">Logo (optional)</label>
+        <input type="file" id="logoUpload" accept="image/*">
+
+        <label for="logoPosition">Logo Position</label>
+        <select id="logoPosition">
+          <option value="right">Right</option>
+          <option value="left">Left</option>
+        </select>
+
+        <!-- Background -->
+        <label for="cardColor" style="margin-top: 12px;">Background Color</label>
+        <input type="color" id="cardColor" value="#ffffff">
+
+        <label>Background Image</label>
+        <button type="button" id="backgroundButton" class="btn btn-info text-white option-btn" data-bs-toggle="modal" data-bs-target="#backgroundModal">Choose Background Image</button>
+
+      </div>
