@@ -28,6 +28,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+/* Main layout */
+.app-layout {
+    width: min(1220px, 94vw);
+    margin: 28px auto;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 24px;
+    align-items: start;  
+}
 
 /* Panels */
 .panel {
