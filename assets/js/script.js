@@ -29,3 +29,27 @@ const previewTitle = document.getElementById("previewTitle");
 const previewCompany = document.getElementById("previewCompany");
 const previewEmail = document.getElementById("previewEmail");
 const previewPhone = document.getElementById("previewPhone");
+
+// update the live preview text
+
+function updatePreview() {
+  const name = nameInput.value.trim();
+  const title = titleInput.value.trim();
+  const company = companyInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+// update the live preview text
+
+function updatePreview() {
+  const name = nameInput.value.trim();
+  const title = titleInput.value.trim();
+  const company = companyInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  // Show what the user typed, or a placeholder if the field is empty
+  if (name === "") {
+    previewName.textContent = "Name";
+  } else {
+    previewName.textContent = name;
+  }
