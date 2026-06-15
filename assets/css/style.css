@@ -370,6 +370,17 @@ button:hover,
     background-color: #ffffff;          
 }
 
+.card-content {
+    margin-top: 0;
+    position: relative;
+    z-index: 1;  /* Above logo */
+}
+
+.card-content h3 {
+    margin: 0 0 16px;
+    font-size: 1.7rem;
+}
+
 
 
 /* Footer box */
