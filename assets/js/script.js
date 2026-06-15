@@ -31,15 +31,6 @@ const previewEmail = document.getElementById("previewEmail");
 const previewPhone = document.getElementById("previewPhone");
 
 // update the live preview text
-
-function updatePreview() {
-  const name = nameInput.value.trim();
-  const title = titleInput.value.trim();
-  const company = companyInput.value.trim();
-  const email = emailInput.value.trim();
-  const phone = phoneInput.value.trim();
-// update the live preview text
-
 function updatePreview() {
   const name = nameInput.value.trim();
   const title = titleInput.value.trim();
@@ -74,4 +65,4 @@ function updatePreview() {
     previewCompany.textContent = company;
     show(previewCompany);
   }
-    
+}
