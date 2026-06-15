@@ -53,3 +53,11 @@ function updatePreview() {
   } else {
     previewName.textContent = name;
   }
+
+  if (title === "") {
+    hide(previewTitle);
+  } else {
+    previewTitle.textContent = title;
+    show(previewTitle);
+  } 
+  
