@@ -88,7 +88,7 @@ Existing tools like Canva or Adobe Express require sign-up, subscriptions, or ar
 - Background: solid colour picker + background gallery with modal
 - Live preview updating in real time
 - Step validation with specific error messages
-- PDF export named after the user's name
+- JPG export of the business card
 
 **Not included:**
 
@@ -176,43 +176,6 @@ Live Preview panel (always visible on the right)
 
 ---
 
-## Plane 5 — Surface
-
-*What does it look like?*
-
-**Colour palette:**
-
-| Role | Value |
-| --- | --- |
-| Primary green | `#66be02` |
-| Primary blue | `#0197c5` |
-| Dark text | `rgba(1, 38, 47, 0.9)` |
-| Teal accent | `rgba(8, 116, 122, 0.9)` |
-
-**Typography:**
-
-- Headings: Space Grotesk (600–700 weight)
-- Body / labels: Manrope (400–700 weight)
-
-**Visual decisions:**
-
-- Gradient title (green → blue) to draw attention to the app name
-- Fixed background image gives depth without interfering with card preview
-- Rounded corners and subtle shadow on the carousel for a modern feel
-
----
-
-## User Stories
-
-| Role | Story | Accepted when |
-| --- | --- | --- |
-| Self-employed person | I want to generate a business card quickly | Card preview updates as I type |
-| Self-employed person | I want to customise colours and style | Background and font controls change the preview instantly |
-| Business professional | I want a clean, modern card | Default layout looks professional out of the box |
-| Business professional | I want to download my card | PDF export saves a file named after the user |
-
----
-
 ## Deployment
 
 The site is deployed via **GitHub Pages**.
@@ -225,3 +188,58 @@ The site is deployed via **GitHub Pages**.
 4. Click Save — GitHub Pages publishes the site automatically
 
 **Live site:** *(add URL here once deployed)*
+
+## Plane 5 — Surface
+
+*What does it look like?*
+
+**Colour palette:**
+
+| Token | Value | Usage |
+| --- | --- | --- |
+| `--accent` | `#00a86b` | Buttons, highlights |
+| `--ink` | `#073b2b` | Primary text |
+| `--surface` | `rgba(236, 255, 246, 0.84)` | Panel backgrounds (frosted) |
+| `--border` | `rgba(8, 79, 53, 0.18)` | Input and panel borders |
+
+**Page background:** Three-layer radial gradient in greens/mint — gives depth and makes the card preview stand out.
+
+**Typography:**
+
+- App UI: Space Grotesk (headings), Manrope (labels and body)
+- User-selectable card fonts: Space Grotesk, Manrope, Playfair Display
+
+**Buttons:** Green gradient with lift-on-hover (`translateY(-2px) scale(1.01)`), minimum 44px height for touch targets.
+
+**Card preview styling:** Rounded corners (20px), box shadow, CSS `fadeInUp` entrance animation (0.45s).
+
+**Accessibility decisions:**
+
+| Decision | Implementation |
+| --- | --- |
+| Minimum touch target | 44px height on all buttons |
+| High contrast | Green `#00a86b` on white — 4.8:1 ratio |
+| Semantic HTML | `<form>`, `<label>`, `<input>`, `<button>` throughout |
+| Custom validation | Error messages list exactly which fields are missing |
+| Modal accessibility | `role="dialog"` and `aria-labelledby` on background modal |
+
+---
+
+## User Stories
+
+| # | As a... | I want to... | So that... | Status |
+| --- | --- | --- | --- | --- |
+| US-01 | Freelancer | Enter my name, email, and phone | Clients can contact me after a meeting | ✅ |
+| US-02 | Freelancer | Update my job title at any time | I always hand out accurate information | ✅ |
+| US-03 | Freelancer | Download my card as a JPG | I can attach it to emails and proposals | ✅ |
+| US-04 | Entrepreneur | Upload my company logo | My card reinforces my brand | ✅ |
+| US-05 | Entrepreneur | Choose where the logo appears | It fits my layout preference | ✅ |
+| US-06 | Entrepreneur | Pick a background image from a gallery | My card stands out visually | ✅ |
+| US-07 | Sales professional | Use the app without signing up | I can generate a card before a networking event | ✅ |
+| US-08 | Sales professional | See the card update as I type | I can spot mistakes before downloading | ✅ |
+| US-09 | HR admin | Control Name and Other Content fonts separately | I can maintain a clear visual hierarchy | ✅ |
+| US-10 | HR admin | Be warned if a required field is missing | The card is never incomplete | ✅ |
+| US-11 | Remote worker | Use the app on my phone | I can create a card on the go | ✅ |
+| US-12 | Career changer | Go back and edit details after customising | I can try different options without losing my design | ✅ |
+
+---
