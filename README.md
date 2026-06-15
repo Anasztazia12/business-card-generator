@@ -1,5 +1,7 @@
 # Business Card Generator
 
+**Live site:** [https://anasztazia12.github.io/business-card-generator/](https://anasztazia12.github.io/business-card-generator/)
+
 ## My Project Idea
 
 This is the original project plan I submitted before starting development.
@@ -107,30 +109,19 @@ Existing tools like Canva or Adobe Express require sign-up, subscriptions, or ar
 *How is the app organised?*
 
 ```text
-Step 1: Your Information
+Single page form:
   → Name, Company, Title, Phone, Email
-  → Click Next (validates required fields)
-
-Step 2: Customize Your Card
   → Logo upload + position (Top-Left / Top-Right)
-  → Background colour or image 
-  → Download PDF  /  Back to Step 1
+  → Background colour or image
+  → Download as JPG
 
 Live Preview panel (always visible on the right)
-```
-
-**Navigation model:**
-
-```text
-[Step 1] → Next → [Step 2] → Download PDF → [PDF saved]
-              ←  Back (all data preserved)
 ```
 
 **Key interaction details:**
 
 - Every input triggers an instant preview update
-- Background modal uses a draft state — preview updates live, but only commits on OK; Cancel restores the previous background
-- Back button returns to Step 1 with all form data and Step 2 settings preserved
+- Background image is selected from a modal gallery and applied immediately
 
 ---
 
@@ -178,16 +169,23 @@ Live Preview panel (always visible on the right)
 
 ## Deployment
 
-The site is deployed via **GitHub Pages**.
+### GitHub Pages
 
+1. Create a public GitHub repository
+2. Push your code:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/business-card-generator.git
+   git push -u origin main
+   ```
+
+3. Go to **Settings → Pages**, set source to `main` branch, click **Save**
+4. Your site will be live at `https://YOUR_USERNAME.github.io/business-card-generator/`
 **Steps to deploy:**
-
-1. Push all files to the `main` branch on GitHub
-2. Go to **Settings → Pages**
-3. Set source to `main` branch, `/ (root)` folder
-4. Click Save — GitHub Pages publishes the site automatically
-
-**Live site:** *(add URL here once deployed)*
 
 ## Plane 5 — Surface
 
@@ -197,28 +195,27 @@ The site is deployed via **GitHub Pages**.
 
 | Token | Value | Usage |
 | --- | --- | --- |
-| `--accent` | `#00a86b` | Buttons, highlights |
-| `--ink` | `#073b2b` | Primary text |
+| `--accent` | `#00a832` | Buttons, highlights |
+| `--ink` | `#012017` | Primary text |
 | `--surface` | `rgba(236, 255, 246, 0.84)` | Panel backgrounds (frosted) |
 | `--border` | `rgba(8, 79, 53, 0.18)` | Input and panel borders |
 
-**Page background:** Three-layer radial gradient in greens/mint — gives depth and makes the card preview stand out.
+**Page background:** Fixed background image — gives depth and makes the card preview stand out.
 
 **Typography:**
 
 - App UI: Space Grotesk (headings), Manrope (labels and body)
-- User-selectable card fonts: Space Grotesk, Manrope, Playfair Display
 
-**Buttons:** Green gradient with lift-on-hover (`translateY(-2px) scale(1.01)`), minimum 44px height for touch targets.
+**Buttons:** Lift-on-hover (`translateY(-2px) scale(1.01)`), minimum 44px height for touch targets.
 
-**Card preview styling:** Rounded corners (20px), box shadow, CSS `fadeInUp` entrance animation (0.45s).
+**Card preview styling:** Rounded corners, box shadow.
 
 **Accessibility decisions:**
 
 | Decision | Implementation |
 | --- | --- |
 | Minimum touch target | 44px height on all buttons |
-| High contrast | Green `#00a86b` on white — 4.8:1 ratio |
+| High contrast | Green `#00a832` on white |
 | Semantic HTML | `<form>`, `<label>`, `<input>`, `<button>` throughout |
 | Custom validation | Error messages list exactly which fields are missing |
 | Modal accessibility | `role="dialog"` and `aria-labelledby` on background modal |
@@ -237,9 +234,9 @@ The site is deployed via **GitHub Pages**.
 | US-06 | Entrepreneur | Pick a background image from a gallery | My card stands out visually | ✅ |
 | US-07 | Sales professional | Use the app without signing up | I can generate a card before a networking event | ✅ |
 | US-08 | Sales professional | See the card update as I type | I can spot mistakes before downloading | ✅ |
-| US-09 | HR admin | Control Name and Other Content fonts separately | I can maintain a clear visual hierarchy | ✅ |
+| US-09 | HR admin | Control Name and Other Content fonts separately | I can maintain a clear visual hierarchy | ❌ |
 | US-10 | HR admin | Be warned if a required field is missing | The card is never incomplete | ✅ |
 | US-11 | Remote worker | Use the app on my phone | I can create a card on the go | ✅ |
-| US-12 | Career changer | Go back and edit details after customising | I can try different options without losing my design | ✅ |
+| US-12 | Career changer | Go back and edit details after customising | I can try different options without losing my design | ❌ |
 
 ---
