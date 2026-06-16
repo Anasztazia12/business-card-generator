@@ -115,7 +115,7 @@ function showLogo() {
     return;
   }
 
-  const reader = new FileReader()
+  const reader = new FileReader();
 
   reader.addEventListener("load", function () {
     previewLogo.src = reader.result;
@@ -125,5 +125,15 @@ function showLogo() {
 
   reader.readAsDataURL(file);
 }
+
+// background color and image
+
+function applyBackground() {
+  cardPreview.style.backgroundColor = cardColor.value;
+
+  if (selectedBackground === "") {
+    cardPreview.style.backgroundImage = "none";
+  }
+
 
 
