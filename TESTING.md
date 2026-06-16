@@ -56,12 +56,12 @@
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Create card – valid | Fill all required fields, click "Create Card" → "Card created successfully!" message | |
-| Create card – missing name | Leave name empty, click "Create Card" → name field turns red, error message shown | |
-| Create card – invalid email | Enter email without @, click "Create Card" → email field turns red, error message shown | |
-| Create card – missing phone | Leave phone empty, click "Create Card" → phone field turns red, error message shown | |
-| Download – valid | Fill all required fields, click "Download as JPG" → JPG file downloads | |
-| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | |
+| Create card – valid | Fill all required fields, click "Create Card" → "Card created successfully!" message | Fail – button has no click handler |
+| Create card – missing name | Leave name empty, click "Create Card" → name field turns red, error message shown | Fail – button has no click handler |
+| Create card – invalid email | Enter email without @, click "Create Card" → email field turns red, error message shown | Fail – button has no click handler |
+| Create card – missing phone | Leave phone empty, click "Create Card" → phone field turns red, error message shown | Fail – button has no click handler |
+| Download – valid | Fill all required fields, click "Download as JPG" → JPG file downloads | Fail – button has no click handler |
+| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | Fail – button has no click handler |
 
 ---
 
