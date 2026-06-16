@@ -1,4 +1,4 @@
-// get the elements from the page
+// get the elements from HTML
 
 // Text inputs
 const nameInput = document.getElementById("name");
