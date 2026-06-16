@@ -419,4 +419,10 @@ footer {
     margin-bottom: 12px; 
     }
 
-  
+  #welcome-page .welcome-subtitle { 
+    margin-bottom: 14px; 
+}
+
+  #welcome-page .welcome-description {
+    margin-bottom: 20px; 
+}
