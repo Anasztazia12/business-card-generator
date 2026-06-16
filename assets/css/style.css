@@ -429,7 +429,7 @@ footer {
 
   #welcome-page #businessCardCarousel { 
     
-    width: min(100%, 480px); 
+    width: min(100%, 440px); 
 }
  .app-layout {
         grid-template-columns: 1fr;
