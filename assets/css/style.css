@@ -431,3 +431,19 @@ footer {
     
     width: min(100%, 440px); 
 }
+#welcome-page .welcome-subtitle { 
+    margin-bottom: 14px; 
+}
+
+  #welcome-page .welcome-description {
+    margin-bottom: 20px; 
+}
+
+  #welcome-page #businessCardCarousel { 
+    
+    width: min(100%, 440px); 
+}
+
+  .app-layout { 
+    grid-template-columns: 1fr; margin: 16px auto 28px; 
+}
