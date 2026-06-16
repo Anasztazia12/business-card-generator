@@ -426,3 +426,8 @@ footer {
   #welcome-page .welcome-description {
     margin-bottom: 20px; 
 }
+
+  #welcome-page #businessCardCarousel { 
+    
+    width: min(100%, 440px); 
+}
