@@ -394,6 +394,151 @@ button:hover,
 }
 
 /* Buttons at the bottom of the form */
+/* nav-btn makes Create Card and Download buttons share the row equally */
+.nav-btn {
+   @media (max-width: 980px) {
+    #welcome-page .welcome-title-row {
+        margin-bottom: 12px;
+    }
+
+    #welcome-page .welcome-subtitle {
+        margin-bottom: 14px;
+    }
+
+    #welcome-page .welcome-description {
+        margin-bottom: 20px;
+    }
+
+    #welcome-page #businessCardCarousel {
+        width: min(100%, 440px);
+    }
+
+    .app-layout {
+        grid-template-columns: 1fr;
+        margin: 16px auto 28px;
+    }
+
+    /* Stop sticky when stacked in a single column */
+    .preview-panel {
+        position: static;
+    }
+
+    /* Full width card */
+    .business-card {
+        width: 100%;
+    }
+
+}
+
+/* Small mobile */
+@media (max-width: 600px) {
+    #welcome-page .welcome-title-row {
+        margin-bottom: 10px;
+    }
+
+    #welcome-page .welcome-title {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+    }
+
+    #welcome-page .welcome-logo {
+        top: -10px;
+        right: 10px;
+        width: clamp(120px, 34vw, 170px);
+        height: auto;
+        border-radius: 0;
+    }
+
+    #welcome-page .welcome-kicker {
+        font-size: 0.8rem;
+    }
+
+    #welcome-page .welcome-subtitle {
+        font-size: 0.98rem;
+    }
+
+    #welcome-page .welcome-section-title {
+        font-size: 1.1rem;
+    }
+
+    #welcome-page .welcome-description {
+        font-size: 0.93rem;
+        line-height: 1.6;
+    }
+
+    #welcome-page #businessCardCarousel {
+        width: 100%;
+    }
+
+    /* Mobile spacing */
+    .app-layout {
+        margin: 12px auto 20px;
+        gap: 16px;
+    }
+
+    /* Smaller panel padding */
+    .panel {
+        padding: 16px;
+    }
+
+    /* Smaller heading */
+    h1 {
+        font-size: clamp(1.3rem, 6vw, 1.8rem);
+    }
+
+    /* Bigger mobile buttons */
+    button,
+    .btn {
+        padding: 14px 18px;
+        min-height: 44px;  /* iOS standard touch size */
+        font-size: 1rem;
+    }
+
+    /* Stack buttons vertically on small screens */
+    .button-group {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    /* Bigger form inputs */
+    .field-grid input,
+    .field-grid select {
+        padding: 12px 14px;
+        font-size: 16px;  
+        min-height: 44px;
+    }
+
+    /* Mobile labels */
+    .field-grid label {
+        font-size: 0.95rem;
+    }
+
+    /* Smaller subtitle */
+    .subtitle {
+        font-size: 0.88rem;
+    }
+
+    /* Mobile card spacing */
+    .business-card {
+        padding-top: 100px;
+        min-height: 280px;
+    }
+
+    /* Mobile footer */
+    footer {
+        padding: 10px;
+    }
+
+    .footer-text {
+        font-size: 0.85rem;
+    }
+}
+
+}
+
 .button-group {
     display: flex;
     min-width: 140px;
@@ -439,7 +584,7 @@ footer {
     .preview-panel {
         position: static;
     }
-    
+
  /* Full width card */
     .business-card {
         width: 100%;
