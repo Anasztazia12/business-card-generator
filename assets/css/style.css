@@ -413,3 +413,10 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+
+@media (max-width: 980px) {
+  #welcome-page .welcome-title-row {
+    margin-bottom: 12px; 
+    }
+
+  
