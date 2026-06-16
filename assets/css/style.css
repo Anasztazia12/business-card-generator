@@ -439,3 +439,10 @@ footer {
     .preview-panel {
         position: static;
     }
+    
+ /* Full width card */
+    .business-card {
+        width: 100%;
+    }
+
+}
