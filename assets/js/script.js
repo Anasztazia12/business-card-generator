@@ -134,3 +134,4 @@ function applyBackground() {
   if (selectedBackground === "") {
     cardPreview.style.backgroundImage = "none";
   }
+}
