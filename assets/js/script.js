@@ -140,3 +140,9 @@ function applyBackground() {
 
 function validateForm() {
   let isValid = true;
+  
+  if (nameInput.value.trim() === "") {
+    isValid = false;
+  }
+
+// Runs when the user clicks one of the images in the background modal
