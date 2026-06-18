@@ -65,6 +65,14 @@
 
 ---
 
+## Bugs Found (Console Errors)
+
+| Error | File & Line | Fix |
+| --- | --- | --- |
+| `Uncaught ReferenceError: myVariable is not defined` | script.js:141 | Removed debug `console.log(myVariable)` and `console.log("Itt járok")` — left in by accident |
+
+---
+
 ## Validator Testing
 
 | Tool | File | Result |
