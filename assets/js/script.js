@@ -133,3 +133,10 @@ function applyBackground() {
 
   if (selectedBackground === "") {
     cardPreview.style.backgroundImage = "none";
+  } else {
+    cardPreview.style.backgroundImage = `url(${selectedBackground})`;
+  }
+}
+
+function validateForm() {
+  let isValid = true;
