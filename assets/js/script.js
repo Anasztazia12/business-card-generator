@@ -146,3 +146,6 @@ function validateForm() {
   }
 
 // Runs when the user clicks one of the images in the background modal
+function selectBackground(imagePath) {
+  selectedBackground = imagePath;
+
