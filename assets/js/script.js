@@ -138,15 +138,23 @@ function applyBackground() {
   }
 }
 
+// check the form before submitting
+
 function validateForm() {
   let isValid = true;
 
   if (nameInput.value.trim() === "") {
     isValid = false;
   }
+  else {
+    nameInput.classList.remove("input-error");
+  }
+
 }
 
 // Runs when the user clicks one of the images in the background modal
 function selectBackground(imagePath) {
   selectedBackground = imagePath;
-
+  applyBackground();
+  hide(document.getElementById("backgroundModal"));
+}
