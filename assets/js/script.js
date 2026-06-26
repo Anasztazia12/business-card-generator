@@ -233,42 +233,48 @@ $(".bg-option").on("click", function () {
 });
 
 }
-document.addEventListener("DOMContentLoaded", () => {
-  // --- a te eddigi kódod ---
-  // nameInput.addEventListener(...)
-  // titleInput.addEventListener(...)
-  // stb...
 
-  // --- MODAL KÓD UGYANEBBEN A BLOKKBAN ---
-  const createCardButton = document.getElementById("createCardButton");
-  const cardPreview = document.getElementById("businessCardPreview");
+// --- BUTTONS ---
+const createCardButton = document.getElementById("createCardButton");
 
-  const cardModal = document.getElementById("cardModal");
-  const modalCardPreview = document.getElementById("modalCardPreview");
-  const closeBtn = document.querySelector(".close");
+// --- PREVIEW ELEMENT ---
+const cardPreview = document.getElementById("businessCardPreview");
 
-  createCardButton.addEventListener("click", () => {
-    modalCardPreview.innerHTML = cardPreview.innerHTML;
-    modalCardPreview.style.cssText = cardPreview.style.cssText;
+// --- MODAL ELEMENTS ---
+const cardModal = document.getElementById("cardModal");
+const modalCardPreview = document.getElementById("modalCardPreview");
+const closeBtn = document.querySelector(".close");
 
-    const originalLogo = cardPreview.querySelector("#previewLogo");
-    const modalLogo = modalCardPreview.querySelector("#previewLogo");
+// --- OPEN MODAL ---
+createCardButton.addEventListener("click", () => {
 
-    if (originalLogo && modalLogo) {
-      modalLogo.src = originalLogo.src;
-      modalLogo.style.cssText = originalLogo.style.cssText;
-    }
+  modalCardPreview.innerHTML = cardPreview.innerHTML;
+  modalCardPreview.className = cardPreview.className;
 
-    cardModal.style.display = "block";
-  });
+  modalCardPreview.style.cssText = cardPreview.style.cssText;
+  modalCardPreview.style.backgroundSize = "cover";
+  modalCardPreview.style.backgroundPosition = "center";
 
-  closeBtn.addEventListener("click", () => {
+
+  const originalLogo = cardPreview.querySelector("#previewLogo");
+  const modalLogo = modalCardPreview.querySelector("#previewLogo");
+
+  if (originalLogo && modalLogo) {
+    modalLogo.src = originalLogo.src;
+    modalLogo.style.cssText = originalLogo.style.cssText;
+  }
+
+  cardModal.style.display = "block";
+});
+
+// --- CLOSE MODAL (X) ---
+closeBtn.addEventListener("click", () => {
+  cardModal.style.display = "none";
+});
+
+// --- CLOSE MODAL (background click) ---
+window.addEventListener("click", (e) => {
+  if (e.target === cardModal) {
     cardModal.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === cardModal) {
-      cardModal.style.display = "none";
-    }
-  });
+  }
 });

@@ -252,17 +252,19 @@ h3 {
 /* Card Modal content */
 .modal-content1 {
   background: #fff;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 20px;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 540px;
   border-radius: 10px;
   border: 1px solid rgba(1, 114, 90, 0.829);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .close {
   float: right;
-  font-size: 24px;
+  font-size: 38px;
   cursor: pointer;
 }
 
