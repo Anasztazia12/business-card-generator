@@ -108,7 +108,7 @@ function updateLogoPosition() {
   } else {
     previewLogo.classList.remove("logo-left");
     previewLogo.classList.add("logo-right");
-  } 
+  }
 }
 
 // Read the chosen image file and show it on the card
@@ -155,7 +155,6 @@ function applyBackground() {
 
   updatePreview();
   applyBackground();
-}
 
 // check the form before submitting
 
@@ -236,4 +235,4 @@ fontColorInput.addEventListener("input", function () {
   document.getElementById("cardContent").style.color = fontColorInput.value;
 });
 
-
+}

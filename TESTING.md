@@ -87,6 +87,8 @@ I used **manual testing** for this project because most of the features are visu
 | `null` reference errors on index.html — script.js tries to access form elements that don't exist on that page | script.js:4-8 | Added guard clause: script checks for `#businessCardForm` and stops if not found |
 | Bootstrap JS loaded twice on form.html (head and body) | form.html:13, 153 | Removed the duplicate `<script>` tag from the body |
 | `<footer>` placed after `<script>` tag | form.html:156 | Moved `<footer>` before the `<script>` tag for correct document structure |
+| `Uncaught ReferenceError: downloadCard is not defined` | script.js:154 | Added missing `downloadCard()` function using html2canvas for JPG export |
+| Background image not applied to card when selected from modal | script.js | Not yet fixed — investigating |
 
 ---
 
