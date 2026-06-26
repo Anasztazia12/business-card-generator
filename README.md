@@ -144,6 +144,10 @@ These wireframes were created during the planning stage to map out the layout be
 
 ![Desktop wireframe](assets/images/desktop-wireframe.png)
 
+**Mobile wireframe:**
+
+![Mobile wireframe](assets/images/mobile-wireframe.png)
+
 **Desktop layout (two-column):**
 
 ```text
