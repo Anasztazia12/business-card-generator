@@ -214,6 +214,11 @@ Live Preview panel (always visible on the right)
 - [Google Fonts](https://fonts.google.com/) — Space Grotesk and Manrope typefaces
 - [GitHub Pages](https://pages.github.com/) — deployment and hosting
 
+## Credits
+
+- Background images and the site logo were generated using [Microsoft Copilot Image Creator](https://copilot.microsoft.com/) (AI-generated)
+- All other code and content is original work by the developer
+
 ---
 
 ## User Stories

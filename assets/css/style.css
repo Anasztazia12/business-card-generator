@@ -83,7 +83,7 @@ body {
     position: absolute;
     top: -20px;
     right: 18px;
-    width: clamp(180px, 18vw, 280px);
+    width: clamp(140px, 18vw, 160px);
     height: auto;
     object-fit: contain;
     border: 0;
