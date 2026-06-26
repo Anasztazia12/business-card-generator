@@ -420,9 +420,12 @@ button:hover,
 }
 
 /* Buttons at the bottom of the form */
-/* nav-btn makes Create Card and Download buttons share the row equally */
 .nav-btn {
-   @media (max-width: 980px) {
+    flex: 1;
+}
+
+/* Tablet and below */
+@media (max-width: 980px) {
     #welcome-page .welcome-title-row {
         margin-bottom: 12px;
     }
@@ -453,7 +456,6 @@ button:hover,
     .business-card {
         width: 100%;
     }
-
 }
 
 /* Small mobile */
@@ -515,7 +517,7 @@ button:hover,
     button,
     .btn {
         padding: 14px 18px;
-        min-height: 44px;  /* iOS standard touch size */
+        min-height: 44px;
         font-size: 1rem;
     }
 
@@ -533,7 +535,7 @@ button:hover,
     .field-grid input,
     .field-grid select {
         padding: 12px 14px;
-        font-size: 16px;  
+        font-size: 16px;
         min-height: 44px;
     }
 
@@ -561,38 +563,4 @@ button:hover,
     .footer-text {
         font-size: 0.85rem;
     }
-}
-}
-
-@media (max-width: 980px) {
-  #welcome-page .welcome-title-row {
-    margin-bottom: 12px; 
-    }
-
-  #welcome-page .welcome-subtitle { 
-    margin-bottom: 14px; 
-}
-
-  #welcome-page .welcome-description {
-    margin-bottom: 20px; 
-}
-
-  #welcome-page #businessCardCarousel { 
-    
-    width: min(100%, 440px); 
-}
- .app-layout {
-        grid-template-columns: 1fr;
-        margin: 16px auto 28px;
-    }
-
-    .preview-panel {
-        position: static;
-    }
-
- /* Full width card */
-    .business-card {
-        width: 100%;
-    }
-
 }
