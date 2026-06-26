@@ -222,6 +222,19 @@ Live Preview panel (always visible on the right)
 
 ---
 
+## Technologies Used
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) — page structure and semantic markup
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) — custom styling and responsive layout
+- [JavaScript (ES6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) — interactivity, live preview, form validation
+- [Bootstrap 5.3](https://getbootstrap.com/) — responsive grid, modal, carousel, and button components
+- [jQuery 3.7](https://jquery.com/) — DOM manipulation helper
+- [html2canvas 1.4](https://html2canvas.hertzen.com/) — client-side JPG export of the business card
+- [Google Fonts](https://fonts.google.com/) — Space Grotesk and Manrope typefaces
+- [GitHub Pages](https://pages.github.com/) — deployment and hosting
+
+---
+
 ## User Stories
 
 | # | As a... | I want to... | So that... | Status |
