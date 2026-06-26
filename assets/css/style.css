@@ -195,16 +195,6 @@ h3 {
     gap: 10px;
 }
 
-.field-grid > * {
-    min-height: auto;
-}
-
-/* Ensure form displays content */
-#businessCardForm {
-    display: block;
-    min-height: auto;
-    width: 100%;
-}
 /* Form labels */
 .field-grid label {
     margin-top: 8px;
