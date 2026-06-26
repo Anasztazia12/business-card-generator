@@ -276,7 +276,7 @@ hr {
 
 /* Footer box */
 footer {
-    width: min(1220px, 94vw);
+    width: min(1100px, 94vw);
     margin: 6px auto 0;
     padding: 6px 16px;
     border-radius: 12px;
@@ -288,7 +288,7 @@ footer {
 
 /* Home page footer  */
 .home-footer {
-    max-width: 980px;
+    max-width: 930px;
     width: 100%;
 }
 

@@ -153,6 +153,8 @@ function applyBackground() {
 
 function validateForm() {
   let isValid = true;
+  const emailValue = emailInput.value.trim();
+  const emailIsValid = emailValue !== "" && emailValue.includes("@") && emailValue.includes(".");
 
   if (nameInput.value.trim() === "") {
     nameInput.classList.add("input-error");
@@ -175,8 +177,13 @@ function validateForm() {
     emailInput.classList.remove("input-error");
   }
 
+  if (emailValue !== "" && emailIsValid === false) {
+    emailInput.classList.add("input-error");
+    isValid = false;
+  }
+
   if (isValid === false) {
-    setStatus("Please fill in: Name, Phone, and Email.");
+    setStatus("Please fill in Name, Phone, and a valid Email address.");
   }
 
   return isValid;
@@ -186,7 +193,7 @@ function createCard() {
   if (validateForm() === false) {
     return;
   }
-  setStatus("Card created! Check the live preview on the right.");
+  setStatus("Card created successfully!");
 
   modalCardPreview.innerHTML = cardPreview.innerHTML;
   modalCardPreview.className = cardPreview.className;
