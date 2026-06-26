@@ -233,3 +233,33 @@ $(".bg-option").on("click", function () {
 });
 
 }
+
+// --- BUTTONS ---
+const createCardButton = document.getElementById("createCardButton");
+const downloadButton = document.getElementById("downloadButton");
+
+// --- PREVIEW ELEMENT ---
+const cardPreview = document.getElementById("businessCardPreview");
+
+// --- MODAL ELEMENTS ---
+const cardModal = document.getElementById("cardModal");
+const modalCardPreview = document.getElementById("modalCardPreview");
+const closeBtn = document.querySelector(".close");
+
+// --- OPEN MODAL ---
+createCardButton.addEventListener("click", () => {
+  modalCardPreview.innerHTML = cardPreview.innerHTML;
+  cardModal.style.display = "block";
+});
+
+// --- CLOSE MODAL (X) ---
+closeBtn.addEventListener("click", () => {
+  cardModal.style.display = "none";
+});
+
+// --- CLOSE MODAL (background click) ---
+window.addEventListener("click", (e) => {
+  if (e.target === cardModal) {
+    cardModal.style.display = "none";
+  }
+});
