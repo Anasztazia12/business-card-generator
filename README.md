@@ -2,6 +2,21 @@
 
 **Live site:** [https://anasztazia12.github.io/business-card-generator/](https://anasztazia12.github.io/business-card-generator/)
 
+## Table of Contents
+
+- [My Project Idea](#my-project-idea)
+- [Plane 1 — Strategy](#plane-1--strategy)
+- [Plane 2 — Scope](#plane-2--scope)
+- [Plane 3 — Structure](#plane-3--structure)
+- [Plane 4 — Skeleton](#plane-4--skeleton)
+- [Plane 5 — Surface](#plane-5--surface)
+- [Technologies Used](#technologies-used)
+- [User Stories](#user-stories)
+- [Testing](#testing)
+- [Deployment](#deployment)
+
+---
+
 ## My Project Idea
 
 This is the original project plan I submitted before starting development.
@@ -20,15 +35,14 @@ How similar "business card generator" apps work, especially how they update the 
 **Planned features:**
 
 1. **Live Card Preview** – the business card updates instantly as the user types.
-
 2. **Style Customization** – users can change background and layout styles.
 3. **Social Icons Toggle** – users can turn social icons on/off.
 
 **Similar websites I looked at:**
 
 1. **Canva Business Card Maker** – lets users design cards with live editing and style options.
-
 2. **Adobe Express Card Creator** – simple online tool for creating personalized business cards.
+
 **User groups + user stories from my plan:**
 
 ### Self-employed people
@@ -40,19 +54,6 @@ How similar "business card generator" apps work, especially how they update the 
 
 - As a business professional, I want to generate a clean, modern digital business card so that I can share my contact details in a more elegant and professional way.
 - As a business professional, I want to download or screenshot my digital card so that I can share it quickly during meetings or networking.
-
----
-
-## Table of Contents
-
-- [My Project Idea](#my-project-idea)
-- [Plane 1 — Strategy](#plane-1--strategy)
-- [Plane 2 — Scope](#plane-2--scope)
-- [Plane 3 — Structure](#plane-3--structure)
-- [Plane 4 — Skeleton](#plane-4--skeleton)
-- [Plane 5 — Surface](#plane-5--surface)
-- [User Stories](#user-stories)
-- [Deployment](#deployment)
 
 ---
 
@@ -167,26 +168,6 @@ Live Preview panel (always visible on the right)
 
 ---
 
-## Deployment
-
-### GitHub Pages
-
-1. Create a public GitHub repository
-2. Push your code:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/business-card-generator.git
-   git push -u origin main
-   ```
-
-3. Go to **Settings → Pages**, set source to `main` branch, click **Save**
-4. My site will be live at `https://anasztazia12.github.io/business-card-generator/`
-**Steps to deploy:**
-
 ## Plane 5 — Surface
 
 *What does it look like?*
@@ -251,5 +232,32 @@ Live Preview panel (always visible on the right)
 | US-10 | HR admin | Be warned if a required field is missing | The card is never incomplete | ✅ |
 | US-11 | Remote worker | Use the app on my phone | I can create a card on the go | ✅ |
 | US-12 | Career changer | Go back and edit details after customising | I can try different options without losing my design | ❌ |
+
+---
+
+## Testing
+
+Testing documentation is maintained in a separate file: [TESTING.md](TESTING.md)
+
+---
+
+## Deployment
+
+### GitHub Pages
+
+1. Create a public GitHub repository
+2. Push your code:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/business-card-generator.git
+   git push -u origin main
+   ```
+
+3. Go to **Settings → Pages**, set source to `main` branch, click **Save**
+4. The site will be live at `https://anasztazia12.github.io/business-card-generator/`
 
 ---

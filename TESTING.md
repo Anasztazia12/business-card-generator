@@ -4,11 +4,11 @@
 
 There are two main types of testing: **manual testing** and **automated testing**.
 
-**Manual testing** involves a person interacting with the application — clicking buttons, filling in forms, resizing the browser — and checking that everything behaves as expected. It is best suited for evaluating visual appearance, user experience and exploratory scenarios that are difficult to script.
+**Manual testing** means a real person uses the website — clicking buttons, typing into forms, checking how things look — and writes down if something works or not. This is good for checking things like layout, colours and how the page feels to use.
 
-**Automated testing** uses code (for example, unit tests written with a framework like Jest) to verify that individual functions return the correct output for a given input. It is best suited for catching regressions quickly and for testing logic that runs many times across different inputs.
+**Automated testing** means writing small test scripts (for example using Jest) that run on their own and check if functions give the right output. This is useful when you have lots of logic to check quickly and want to catch bugs early.
 
-For this project, **manual testing** was chosen because the application is primarily a visual, interactive tool. The key quality criteria — layout, responsiveness, live preview accuracy, and file download — are most reliably verified by a human tester across different devices and browsers. Automated unit tests would add value for the validation logic in a future iteration.
+I used **manual testing** for this project because most of the features are visual (live preview, background picker, card download). It made more sense to test these by actually using the site on different screen sizes and browsers rather than writing automated scripts.
 
 ---
 
@@ -23,8 +23,6 @@ For this project, **manual testing** was chosen because the application is prima
 | Footer | Green gradient footer visible at the bottom of the page | Pass |
 | Carousel (index.html) | Images slide automatically and with prev/next buttons | Pass — was broken due to missing Bootstrap JS link, now fixed |
 | Carousel arrows | Prev/next icons appear as white circles, turn teal on hover | Pass |
-
----
 
 ---
 
@@ -73,7 +71,7 @@ For this project, **manual testing** was chosen because the application is prima
 | Create card – invalid email | Enter email without @, click "Create Card" → email field turns red, error message shown | Fail – button has no click handler |
 | Create card – missing phone | Leave phone empty, click "Create Card" → phone field turns red, error message shown | Fail – button has no click handler |
 | Download – valid | Fill all required fields, click "Download as JPG" → JPG file downloads | Fail – button has no click handler |
-| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | Fail – button has no click handler |ha
+| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | Fail – button has no click handler |
 
 ---
 
