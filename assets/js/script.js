@@ -141,6 +141,8 @@ function applyBackground() {
     cardPreview.style.backgroundImage = "none";
   } else {
     cardPreview.style.backgroundImage = `url(${selectedBackground})`;
+    cardPreview.style.backgroundSize = "cover";
+    cardPreview.style.backgroundPosition = "center";
   }
 }
 
