@@ -369,6 +369,12 @@ button:hover,
     right: auto;
 }
 
+/* Logo position switched to top-right */
+.card-logo.logo-right {
+    right: 18px;
+    left: auto;
+}
+
 /* "None" option placeholder in the background gallery */
 .bg-option-none {
     display: flex;
