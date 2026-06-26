@@ -165,4 +165,21 @@ function selectBackground(imagePath) {
   hide(document.getElementById("backgroundModal"));
 }
 
+// Event listeners
+
+nameInput.addEventListener("input", updatePreview);
+titleInput.addEventListener("input", updatePreview);
+companyInput.addEventListener("input", updatePreview);
+emailInput.addEventListener("input", updatePreview);
+phoneInput.addEventListener("input", updatePreview);
+
+logoUpload.addEventListener("change", showLogo);
+logoPosition.addEventListener("change", updateLogoPosition);
+
+cardColor.addEventListener("input", applyBackground);
+
+fontColorInput.addEventListener("input", function () {
+  document.getElementById("cardContent").style.color = fontColorInput.value;
+});
+
 }
