@@ -6,7 +6,7 @@
 
 This is the original project plan I submitted before starting development.
 
-[View original PDF](assets/pdf/My Project Idea.pdf)
+[View original PDF](assets/pdf/my-project-idea.pdf)
 
 **Project description:**
 A simple Digital Business Card Generator where the user types their details into a form and the card updates live on the screen. They can change background and styles, and the preview changes instantly using JavaScript.
