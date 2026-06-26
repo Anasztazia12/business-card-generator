@@ -1,5 +1,17 @@
 # Testing
 
+## Testing Approach
+
+There are two main types of testing: **manual testing** and **automated testing**.
+
+**Manual testing** involves a person interacting with the application — clicking buttons, filling in forms, resizing the browser — and checking that everything behaves as expected. It is best suited for evaluating visual appearance, user experience and exploratory scenarios that are difficult to script.
+
+**Automated testing** uses code (for example, unit tests written with a framework like Jest) to verify that individual functions return the correct output for a given input. It is best suited for catching regressions quickly and for testing logic that runs many times across different inputs.
+
+For this project, **manual testing** was chosen because the application is primarily a visual, interactive tool. The key quality criteria — layout, responsiveness, live preview accuracy, and file download — are most reliably verified by a human tester across different devices and browsers. Automated unit tests would add value for the validation logic in a future iteration.
+
+---
+
 ## Manual Testing
 
 | Feature | Test | Result |
