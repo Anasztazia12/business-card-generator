@@ -197,6 +197,19 @@ function createCard() {
   setStatus("Card created! Check the live preview on the right.");
 }
 
+function downloadCard() {
+  if (validateForm() === false) {
+    return;
+  }
+  html2canvas(cardPreview).then(function (canvas) {
+    const link = document.createElement("a");
+    link.download = "business-card.jpg";
+    link.href = canvas.toDataURL("image/jpeg", 0.95);
+    link.click();
+    setStatus("Card downloaded as JPG.");
+  });
+}
+
 // Runs when the user clicks one of the images in the background modal
 function selectBackground(imagePath) {
   selectedBackground = imagePath;
