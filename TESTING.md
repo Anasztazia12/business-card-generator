@@ -59,8 +59,8 @@ I used **manual testing** for this project because most of the features are visu
 | --- | --- | --- |
 | Font color | Pick a color → all card text changes to that color | Pass — previously failed, fixed by adding event listener |
 | Background color | Pick a color → card background changes to that color | Pass — previously failed, fixed by adding event listener |
-| Background image | Open modal, click an image → card shows that background | Fail — background image not applied to card |
-| Background image – none | Click "None" in modal → card background image is removed | Fail — background image not applied to card |
+| Background image | Open modal, click an image → card shows that background | Pass — previously failed, image was too large and not positioned; fixed by adding `backgroundSize: cover` and `backgroundPosition: center` |
+| Background image – none | Click "None" in modal → card background image is removed | Pass |
 
 ### Create Card & Download
 
@@ -88,7 +88,9 @@ I used **manual testing** for this project because most of the features are visu
 | Bootstrap JS loaded twice on form.html (head and body) | form.html:13, 153 | Removed the duplicate `<script>` tag from the body |
 | `<footer>` placed after `<script>` tag | form.html:156 | Moved `<footer>` before the `<script>` tag for correct document structure |
 | `Uncaught ReferenceError: downloadCard is not defined` | script.js:154 | Added missing `downloadCard()` function using html2canvas for JPG export |
-| Background image not applied to card when selected from modal | script.js | Not yet fixed — investigating |
+| A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
+| Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
+| Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
 
 ---
 
