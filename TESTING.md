@@ -32,33 +32,33 @@ I used **manual testing** for this project because most of the features are visu
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Name field | Type a name → preview name updates instantly | Pass |
+| Name field | Type a name → preview name updates instantly | Pass — previously failed, fixed by adding event listeners |
 | Name field empty | Clear the name → preview shows "Name" placeholder | Pass |
-| Title field | Type a title → preview title appears | Pass |
+| Title field | Type a title → preview title appears | Pass — previously failed, fixed by adding event listeners |
 | Title field empty | Clear the title → preview title disappears | Pass |
-| Company field | Type a company → preview company appears | Pass |
+| Company field | Type a company → preview company appears | Pass — previously failed, fixed by adding event listeners |
 | Company field empty | Clear the company → preview company disappears | Pass |
-| Email field | Type an email → preview email updates instantly | Pass |
+| Email field | Type an email → preview email updates instantly | Pass — previously failed, fixed by adding event listeners |
 | Email field empty | Clear the email → preview shows `email@example.com` placeholder | Pass |
-| Phone field | Type a phone number → preview phone updates instantly | Pass |
+| Phone field | Type a phone number → preview phone updates instantly | Pass — previously failed, fixed by adding event listeners |
 | Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | Pass |
 
 ### Logo
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Logo upload | Upload an image → logo appears on the card preview | Pass |
+| Logo upload | Upload an image → logo appears on the card preview | Pass — previously failed, fixed by adding event listeners |
 | Logo upload – no file | Remove the file / reload → logo is hidden | Pass |
-| Logo position – right | Select "Right" → logo appears in top-right corner | Pass |
-| Logo position – left | Select "Left" → logo moves to top-left corner | Pass |
+| Logo position – right | Select "Right" → logo appears in top-right corner | Pass — previously failed, fixed by adding event listener and CSS |
+| Logo position – left | Select "Left" → logo moves to top-left corner | Pass — previously failed, fixed by adding event listener and CSS |
 | Logo position change | Upload logo, then change position → logo moves without re-uploading | Pass |
 
 ### Colors & Background
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Font color | Pick a color → all card text changes to that color | Pass |
-| Background color | Pick a color → card background changes to that color | Pass |
+| Font color | Pick a color → all card text changes to that color | Pass — previously failed, fixed by adding event listener |
+| Background color | Pick a color → card background changes to that color | Pass — previously failed, fixed by adding event listener |
 | Background image | Open modal, click an image → card shows that background | Pass |
 | Background image – none | Click "None" in modal → card background image is removed | Pass |
 
