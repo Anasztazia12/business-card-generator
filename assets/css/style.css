@@ -172,7 +172,7 @@ body {
 
 /* Page title (form page) */
 h1 {
-    margin: 1;
+    margin: 0;
     font-family: "Space Grotesk", sans-serif;  
     font-size: clamp(1.55rem, 1.3vw + 1.1rem, 2rem); 
 }
