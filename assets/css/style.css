@@ -208,7 +208,7 @@ h3 {
 .field-grid input,
 .field-grid select {
     width: 100%;
-    border: 1px solid #9cd6b8;
+    border: 1px solid #0fd3b9;
     border-radius: 12px;
     padding: 10px 12px;
     font: inherit;
@@ -218,7 +218,8 @@ h3 {
 }
 
 .field-grid input.input-error {
-    border-color: #d1495b;
+    border-color: #e40a27;
+    border-width: 2px;
     box-shadow: 0 0 0 2px rgba(209, 73, 91, 0.16);
 }
 
