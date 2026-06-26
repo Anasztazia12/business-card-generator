@@ -130,6 +130,16 @@ Live Preview panel (always visible on the right)
 
 *What does the user see and interact with?*
 
+### Wireframes
+
+These wireframes were created during the planning stage to map out the layout before writing any code.
+
+**Early planning sketches:**
+
+![Wireframe plan 1](assets/images/wireframe-plan1.png)
+
+![Wireframe plan 2](assets/images/wireframe-plan2.png)
+
 **Desktop layout (two-column):**
 
 ```text
