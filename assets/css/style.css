@@ -225,10 +225,8 @@ h3 {
 /* Color input */
 .field-grid input[type="color"] {
     padding: 4px;
-    min-height: 44px; 
+    min-height: 44px;
 }
-
-
 
 .button-group {
     display: flex;
@@ -307,12 +305,6 @@ footer {
 .card-logo.logo-left {
     left: 18px;
     right: auto;
-}
-
-/* Logo position switched to top-right */
-.card-logo.logo-right {
-    right: 18px;
-    left: auto;
 }
 
 /* "None" option placeholder in the background gallery */
