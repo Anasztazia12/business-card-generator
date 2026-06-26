@@ -238,7 +238,7 @@ h3 {
 }
 
 /* Modal overlay */
-.modal {
+.modal1 {
   display: none;
   position: fixed;
   z-index: 10;
@@ -249,7 +249,7 @@ h3 {
   background-color: rgba(1, 139, 110, 0.856);
 }
 
-.modal-content {
+.modal-content1 {
   background: #fff;
   margin: 10% auto;
   padding: 20px;
