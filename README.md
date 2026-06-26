@@ -2,7 +2,7 @@
 
 Responsive Design Mockup Image
 
-![Responsive Design](assets/images/responsive-business-card1.png)
+![Responsive Design](assets/images/responsive-business-card.png)
 
 **Live site:** [https://anasztazia12.github.io/business-card-generator/](https://anasztazia12.github.io/business-card-generator/)
 
