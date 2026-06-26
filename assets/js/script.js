@@ -1,4 +1,4 @@
-// Only run on pages that have the business card form
+// Only runs on the form.html page, which has the form.
 const businessCardForm = document.getElementById("businessCardForm");
 if (!businessCardForm) {
   // This page has no form, so stop here
@@ -150,12 +150,38 @@ function validateForm() {
   let isValid = true;
 
   if (nameInput.value.trim() === "") {
+    nameInput.classList.add("input-error");
     isValid = false;
-  }
-  else {
+  } else {
     nameInput.classList.remove("input-error");
   }
 
+  if (phoneInput.value.trim() === "") {
+    phoneInput.classList.add("input-error");
+    isValid = false;
+  } else {
+    phoneInput.classList.remove("input-error");
+  }
+
+  if (emailInput.value.trim() === "") {
+    emailInput.classList.add("input-error");
+    isValid = false;
+  } else {
+    emailInput.classList.remove("input-error");
+  }
+
+  if (isValid === false) {
+    setStatus("Please fill in: Name, Phone, and Email.");
+  }
+
+  return isValid;
+}
+
+function createCard() {
+  if (validateForm() === false) {
+    return;
+  }
+  setStatus("Card created! Check the live preview on the right.");
 }
 
 // Runs when the user clicks one of the images in the background modal
