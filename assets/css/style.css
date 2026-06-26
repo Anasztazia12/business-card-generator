@@ -60,7 +60,7 @@ body {
 /* Title row spacing */
 #welcome-page .welcome-title-row {
     display: block;
-    margin: 0 0 14px;
+    margin: 0 0 6px;
 }
 
 /* Gradient heading text */
@@ -94,7 +94,7 @@ body {
 
 /* Uppercase tagline below title */
 #welcome-page .welcome-kicker {
-    margin: 0 0 8px;
+    margin: 0 0 4px;
     font-family: "Manrope", sans-serif;
     font-size: clamp(0.86rem, 0.35vw + 0.8rem, 0.98rem);
     font-weight: 700;
@@ -106,7 +106,7 @@ body {
 /* Short description below kicker */
 #welcome-page .welcome-subtitle{
     max-width: 36ch;
-    margin: 0 auto 18px;
+    margin: 0 auto 10px;
     font-family: "Manrope", sans-serif;
     font-size: clamp(1.06rem, 0.65vw + 0.9rem, 1.32rem);
     font-weight: 600;
@@ -116,7 +116,7 @@ body {
 
 /* Section heading above carousel */
 #welcome-page .welcome-section-title {
-    margin: 0 0 12px;
+    margin: 0 0 4px;
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(1.2rem, 0.55vw + 1rem, 1.5rem);
     font-weight: 700;
@@ -127,10 +127,10 @@ body {
 /* Descriptive text below section heading */
 #welcome-page .welcome-description {
     max-width: 62ch;
-    margin: 0 auto 12px;
+    margin: 0 auto 8px;
     font-family: "Manrope", sans-serif;
     font-size: clamp(0.95rem, 0.28vw + 0.9rem, 1.02rem);
-    line-height: 1.65;
+    line-height: 1.45;
     color: rgba(1, 32, 23, 0.78);
 }
 
@@ -278,8 +278,8 @@ button {
 /* Footer box */
 footer {
     width: min(1220px, 94vw);
-    margin: 14px auto 0;
-    padding: 10px 16px;
+    margin: 6px auto 0;
+    padding: 6px 16px;
     border-radius: 12px;
     text-align: center;
     background: linear-gradient(125deg, #00bb75 0%, #00a86b 52%, #008f5a 100%);
