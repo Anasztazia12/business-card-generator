@@ -33,6 +33,9 @@ const statusText = document.getElementById("statusText");
 // Preview elements
 
 const cardPreview = document.getElementById("businessCardPreview");
+const cardModal = document.getElementById("cardModal");
+const modalCardPreview = document.getElementById("modalCardPreview");
+const closeBtn = document.querySelector(".close");
 const previewName = document.getElementById("previewName");
 const previewTitle = document.getElementById("previewTitle");
 const previewCompany = document.getElementById("previewCompany");
@@ -184,6 +187,22 @@ function createCard() {
     return;
   }
   setStatus("Card created! Check the live preview on the right.");
+
+  modalCardPreview.innerHTML = cardPreview.innerHTML;
+  modalCardPreview.className = cardPreview.className;
+  modalCardPreview.style.cssText = cardPreview.style.cssText;
+  modalCardPreview.style.backgroundSize = "cover";
+  modalCardPreview.style.backgroundPosition = "center";
+
+  const originalLogo = cardPreview.querySelector("#previewLogo");
+  const modalLogo = modalCardPreview.querySelector("#previewLogo");
+
+  if (originalLogo && modalLogo) {
+    modalLogo.src = originalLogo.src;
+    modalLogo.style.cssText = originalLogo.style.cssText;
+  }
+
+  cardModal.style.display = "block";
 }
 
 // download the card as a JPG image
@@ -232,41 +251,6 @@ $(".bg-option").on("click", function () {
   selectBackground($(this).data("bg"));
 });
 
-}
-
-// --- BUTTONS ---
-const createCardButton = document.getElementById("createCardButton");
-
-// --- PREVIEW ELEMENT ---
-const cardPreview = document.getElementById("businessCardPreview");
-
-// --- MODAL ELEMENTS ---
-const cardModal = document.getElementById("cardModal");
-const modalCardPreview = document.getElementById("modalCardPreview");
-const closeBtn = document.querySelector(".close");
-
-// --- OPEN MODAL ---
-createCardButton.addEventListener("click", () => {
-
-  modalCardPreview.innerHTML = cardPreview.innerHTML;
-  modalCardPreview.className = cardPreview.className;
-
-  modalCardPreview.style.cssText = cardPreview.style.cssText;
-  modalCardPreview.style.backgroundSize = "cover";
-  modalCardPreview.style.backgroundPosition = "center";
-
-
-  const originalLogo = cardPreview.querySelector("#previewLogo");
-  const modalLogo = modalCardPreview.querySelector("#previewLogo");
-
-  if (originalLogo && modalLogo) {
-    modalLogo.src = originalLogo.src;
-    modalLogo.style.cssText = originalLogo.style.cssText;
-  }
-
-  cardModal.style.display = "block";
-});
-
 // --- CLOSE MODAL (X) ---
 closeBtn.addEventListener("click", () => {
   cardModal.style.display = "none";
@@ -278,3 +262,5 @@ window.addEventListener("click", (e) => {
     cardModal.style.display = "none";
   }
 });
+
+}
