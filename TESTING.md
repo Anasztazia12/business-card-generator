@@ -32,35 +32,35 @@ I used **manual testing** for this project because most of the features are visu
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Name field | Type a name → preview name updates instantly | Fail — no event listener connected yet |
-| Name field empty | Clear the name → preview shows "Name" placeholder | Fail — no event listener connected yet |
-| Title field | Type a title → preview title appears | Fail — no event listener connected yet |
-| Title field empty | Clear the title → preview title disappears | Fail — no event listener connected yet |
-| Company field | Type a company → preview company appears | Fail — no event listener connected yet |
-| Company field empty | Clear the company → preview company disappears | Fail — no event listener connected yet |
-| Email field | Type an email → preview email updates instantly | Fail — no event listener connected yet |
-| Email field empty | Clear the email → preview shows `email@example.com` placeholder | Fail — no event listener connected yet |
-| Phone field | Type a phone number → preview phone updates instantly | Fail — no event listener connected yet |
-| Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | Fail — no event listener connected yet |
+| Name field | Type a name → preview name updates instantly | Pass |
+| Name field empty | Clear the name → preview shows "Name" placeholder | Pass |
+| Title field | Type a title → preview title appears | Pass |
+| Title field empty | Clear the title → preview title disappears | Pass |
+| Company field | Type a company → preview company appears | Pass |
+| Company field empty | Clear the company → preview company disappears | Pass |
+| Email field | Type an email → preview email updates instantly | Pass |
+| Email field empty | Clear the email → preview shows `email@example.com` placeholder | Pass |
+| Phone field | Type a phone number → preview phone updates instantly | Pass |
+| Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | Pass |
 
 ### Logo
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Logo upload | Upload an image → logo appears on the card preview | Fail — no event listener connected yet |
-| Logo upload – no file | Remove the file / reload → logo is hidden | Pass — logo is hidden by default via `hidden` class |
-| Logo position – right | Select "Right" → logo appears in top-right corner | Fail — no event listener connected yet |
-| Logo position – left | Select "Left" → logo moves to top-left corner | Fail — no event listener connected yet |
-| Logo position change | Upload logo, then change position → logo moves without re-uploading | Fail — no event listener connected yet |
+| Logo upload | Upload an image → logo appears on the card preview | Pass |
+| Logo upload – no file | Remove the file / reload → logo is hidden | Pass |
+| Logo position – right | Select "Right" → logo appears in top-right corner | Pass |
+| Logo position – left | Select "Left" → logo moves to top-left corner | Pass |
+| Logo position change | Upload logo, then change position → logo moves without re-uploading | Pass |
 
 ### Colors & Background
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Font color | Pick a color → all card text changes to that color | Fail — no event listener connected yet |
-| Background color | Pick a color → card background changes to that color | Fail — no event listener connected yet |
-| Background image | Open modal, click an image → card shows that background | Fail — no event listener connected yet |
-| Background image – none | Click "None" in modal → card background image is removed | Fail — no event listener connected yet |
+| Font color | Pick a color → all card text changes to that color | Pass |
+| Background color | Pick a color → card background changes to that color | Pass |
+| Background image | Open modal, click an image → card shows that background | Pass |
+| Background image – none | Click "None" in modal → card background image is removed | Pass |
 
 ### Create Card & Download
 
