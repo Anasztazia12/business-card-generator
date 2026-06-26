@@ -1,3 +1,9 @@
+// Only run on pages that have the business card form
+const businessCardForm = document.getElementById("businessCardForm");
+if (!businessCardForm) {
+  // This page has no form, so stop here
+} else {
+
 // get the elements from HTML
 
 // Text inputs
@@ -157,4 +163,6 @@ function selectBackground(imagePath) {
   selectedBackground = imagePath;
   applyBackground();
   hide(document.getElementById("backgroundModal"));
+}
+
 }
