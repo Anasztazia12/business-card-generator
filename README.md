@@ -288,3 +288,11 @@ Testing documentation is maintained in a separate file: [TESTING.md](TESTING.md)
 4. The site will be live at `https://anasztazia12.github.io/business-card-generator/`
 
 ---
+
+## Acknowledgements
+
+Thank you for taking the time to check out this project! This was built as part of my Portfolio Project 2 for the L5 Diploma in Web Application Development.
+
+If you have any feedback or suggestions, feel free to reach out via [GitHub](https://github.com/Anasztazia12).
+
+---
