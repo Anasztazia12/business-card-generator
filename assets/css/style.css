@@ -260,6 +260,12 @@ h3 {
   border: 1px solid rgba(1, 114, 90, 0.829);
 }
 
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* Footer box */
 footer {
     width: min(1220px, 94vw);

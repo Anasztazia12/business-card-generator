@@ -233,33 +233,42 @@ $(".bg-option").on("click", function () {
 });
 
 }
+document.addEventListener("DOMContentLoaded", () => {
+  // --- a te eddigi kódod ---
+  // nameInput.addEventListener(...)
+  // titleInput.addEventListener(...)
+  // stb...
 
-// --- BUTTONS ---
-const createCardButton = document.getElementById("createCardButton");
-const downloadButton = document.getElementById("downloadButton");
+  // --- MODAL KÓD UGYANEBBEN A BLOKKBAN ---
+  const createCardButton = document.getElementById("createCardButton");
+  const cardPreview = document.getElementById("businessCardPreview");
 
-// --- PREVIEW ELEMENT ---
-const cardPreview = document.getElementById("businessCardPreview");
+  const cardModal = document.getElementById("cardModal");
+  const modalCardPreview = document.getElementById("modalCardPreview");
+  const closeBtn = document.querySelector(".close");
 
-// --- MODAL ELEMENTS ---
-const cardModal = document.getElementById("cardModal");
-const modalCardPreview = document.getElementById("modalCardPreview");
-const closeBtn = document.querySelector(".close");
+  createCardButton.addEventListener("click", () => {
+    modalCardPreview.innerHTML = cardPreview.innerHTML;
+    modalCardPreview.style.cssText = cardPreview.style.cssText;
 
-// --- OPEN MODAL ---
-createCardButton.addEventListener("click", () => {
-  modalCardPreview.innerHTML = cardPreview.innerHTML;
-  cardModal.style.display = "block";
-});
+    const originalLogo = cardPreview.querySelector("#previewLogo");
+    const modalLogo = modalCardPreview.querySelector("#previewLogo");
 
-// --- CLOSE MODAL (X) ---
-closeBtn.addEventListener("click", () => {
-  cardModal.style.display = "none";
-});
+    if (originalLogo && modalLogo) {
+      modalLogo.src = originalLogo.src;
+      modalLogo.style.cssText = originalLogo.style.cssText;
+    }
 
-// --- CLOSE MODAL (background click) ---
-window.addEventListener("click", (e) => {
-  if (e.target === cardModal) {
+    cardModal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
     cardModal.style.display = "none";
-  }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === cardModal) {
+      cardModal.style.display = "none";
+    }
+  });
 });
