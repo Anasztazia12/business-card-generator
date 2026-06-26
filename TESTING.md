@@ -59,8 +59,8 @@ I used **manual testing** for this project because most of the features are visu
 | --- | --- | --- |
 | Font color | Pick a color → all card text changes to that color | Pass — previously failed, fixed by adding event listener |
 | Background color | Pick a color → card background changes to that color | Pass — previously failed, fixed by adding event listener |
-| Background image | Open modal, click an image → card shows that background | Pass |
-| Background image – none | Click "None" in modal → card background image is removed | Pass |
+| Background image | Open modal, click an image → card shows that background | Fail — background image not applied to card |
+| Background image – none | Click "None" in modal → card background image is removed | Fail — background image not applied to card |
 
 ### Create Card & Download
 

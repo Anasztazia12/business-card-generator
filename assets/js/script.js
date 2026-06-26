@@ -221,4 +221,4 @@ fontColorInput.addEventListener("input", function () {
   document.getElementById("cardContent").style.color = fontColorInput.value;
 });
 
-}
+
