@@ -197,6 +197,8 @@ function createCard() {
   setStatus("Card created! Check the live preview on the right.");
 }
 
+// download the card as a JPG image
+
 function downloadCard() {
   if (validateForm() === false) {
     return;
