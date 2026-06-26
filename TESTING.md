@@ -39,7 +39,7 @@ I used **manual testing** for this project because most of the features are visu
 | Company field | Type a company → preview company appears | Fail — no event listener connected yet |
 | Company field empty | Clear the company → preview company disappears | Fail — no event listener connected yet |
 | Email field | Type an email → preview email updates instantly | Fail — no event listener connected yet |
-| Email field empty | Clear the email → preview shows "email\@example.com" placeholder | Fail — no event listener connected yet |
+| Email field empty | Clear the email → preview shows `email@example.com` placeholder | Fail — no event listener connected yet |
 | Phone field | Type a phone number → preview phone updates instantly | Fail — no event listener connected yet |
 | Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | Fail — no event listener connected yet |
 
