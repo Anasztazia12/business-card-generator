@@ -140,6 +140,10 @@ These wireframes were created during the planning stage to map out the layout be
 
 ![Wireframe plan 2](assets/images/wireframe-plan2.png)
 
+**Desktop wireframe:**
+
+![Desktop wireframe](assets/images/desktop-wireframe.png)
+
 **Desktop layout (two-column):**
 
 ```text
