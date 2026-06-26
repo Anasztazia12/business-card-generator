@@ -237,7 +237,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* Modal overlay */
+/* Card Modal overlay */
 .modal1 {
   display: none;
   position: fixed;
@@ -249,6 +249,7 @@ h3 {
   background-color: rgba(1, 139, 110, 0.856);
 }
 
+/* Card Modal content */
 .modal-content1 {
   background: #fff;
   margin: 10% auto;
@@ -294,11 +295,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 10px;
+    border: 1px solid rgba(2, 179, 179, 0.952);
+    border-radius: 12px;
+    padding: 10px;
 }
 
 /* Background image picker button in modal */
 .bg-option {
-    border: 2px solid transparent;
+    border: 2px solid rgba(2, 179, 179, 0.952);
     border-radius: 12px;
     padding: 0;
     overflow: hidden;
@@ -312,6 +316,8 @@ footer {
     height: 90px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
+    border: 1px solid rgba(2, 179, 179, 0.952);
 }
 
 /* Logo on the business card preview — top-right by default */
