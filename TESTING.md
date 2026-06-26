@@ -73,7 +73,7 @@ For this project, **manual testing** was chosen because the application is prima
 | Create card – invalid email | Enter email without @, click "Create Card" → email field turns red, error message shown | Fail – button has no click handler |
 | Create card – missing phone | Leave phone empty, click "Create Card" → phone field turns red, error message shown | Fail – button has no click handler |
 | Download – valid | Fill all required fields, click "Download as JPG" → JPG file downloads | Fail – button has no click handler |
-| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | Fail – button has no click handler |
+| Download – missing fields | Leave required fields empty, click "Download" → error message, no download | Fail – button has no click handler |ha
 
 ---
 
@@ -96,3 +96,7 @@ For this project, **manual testing** was chosen because the application is prima
 
 | Tool | File | Result |
 | --- | --- | --- |
+| [W3C HTML Validator](https://validator.w3.org/) | index.html | Pending — to be tested after deployment |
+| [W3C HTML Validator](https://validator.w3.org/) | form.html | Pending — to be tested after deployment |
+| [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pending — to be tested after deployment |
+| [JSHint](https://jshint.com/) | script.js | Pending — to be tested when JS is complete |
