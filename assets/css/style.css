@@ -266,21 +266,6 @@ footer {
     width: 100%;
 }
 
-/* Button hover */
-button:hover,
-.btn:hover {
-    transform: translateY(-2px) scale(1.01); 
-}
-
-.btn:focus-visible {
-    box-shadow: 0 0 0 3px rgba(0, 168, 107, 0.2);
-}
-
-
-.option-btn {
-    width: 100%;
-    min-height: 44px;  
-}
 
 #cardColor {
     min-height: 36px;
