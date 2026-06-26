@@ -237,6 +237,28 @@ h3 {
     flex-wrap: wrap;
 }
 
+/* Modal overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 139, 110, 0.856);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(1, 114, 90, 0.829);
+}
+
 /* Footer box */
 footer {
     width: min(1220px, 94vw);
