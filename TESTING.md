@@ -34,35 +34,35 @@ For this project, **manual testing** was chosen because the application is prima
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Name field | Type a name → preview name updates instantly | |
-| Name field empty | Clear the name → preview shows "Name" placeholder | |
-| Title field | Type a title → preview title appears | |
-| Title field empty | Clear the title → preview title disappears | |
-| Company field | Type a company → preview company appears | |
-| Company field empty | Clear the company → preview company disappears | |
-| Email field | Type an email → preview email updates instantly | |
-| Email field empty | Clear the email → preview shows "email\@example.com" placeholder | |
-| Phone field | Type a phone number → preview phone updates instantly | |
-| Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | |
+| Name field | Type a name → preview name updates instantly | Fail — no event listener connected yet |
+| Name field empty | Clear the name → preview shows "Name" placeholder | Fail — no event listener connected yet |
+| Title field | Type a title → preview title appears | Fail — no event listener connected yet |
+| Title field empty | Clear the title → preview title disappears | Fail — no event listener connected yet |
+| Company field | Type a company → preview company appears | Fail — no event listener connected yet |
+| Company field empty | Clear the company → preview company disappears | Fail — no event listener connected yet |
+| Email field | Type an email → preview email updates instantly | Fail — no event listener connected yet |
+| Email field empty | Clear the email → preview shows "email\@example.com" placeholder | Fail — no event listener connected yet |
+| Phone field | Type a phone number → preview phone updates instantly | Fail — no event listener connected yet |
+| Phone field empty | Clear the phone → preview shows "+44 1234 567890" placeholder | Fail — no event listener connected yet |
 
 ### Logo
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Logo upload | Upload an image → logo appears on the card preview | |
-| Logo upload – no file | Remove the file / reload → logo is hidden | |
-| Logo position – right | Select "Right" → logo appears in top-right corner | |
-| Logo position – left | Select "Left" → logo moves to top-left corner | |
-| Logo position change | Upload logo, then change position → logo moves without re-uploading | |
+| Logo upload | Upload an image → logo appears on the card preview | Fail — no event listener connected yet |
+| Logo upload – no file | Remove the file / reload → logo is hidden | Pass — logo is hidden by default via `hidden` class |
+| Logo position – right | Select "Right" → logo appears in top-right corner | Fail — no event listener connected yet |
+| Logo position – left | Select "Left" → logo moves to top-left corner | Fail — no event listener connected yet |
+| Logo position change | Upload logo, then change position → logo moves without re-uploading | Fail — no event listener connected yet |
 
 ### Colors & Background
 
 | Feature | Test | Result |
 | --- | --- | --- |
-| Font color | Pick a color → all card text changes to that color | |
-| Background color | Pick a color → card background changes to that color | |
-| Background image | Open modal, click an image → card shows that background | |
-| Background image – none | Click "None" in modal → card background image is removed | |
+| Font color | Pick a color → all card text changes to that color | Fail — no event listener connected yet |
+| Background color | Pick a color → card background changes to that color | Fail — no event listener connected yet |
+| Background image | Open modal, click an image → card shows that background | Fail — no event listener connected yet |
+| Background image – none | Click "None" in modal → card background image is removed | Fail — no event listener connected yet |
 
 ### Create Card & Download
 
