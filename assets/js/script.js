@@ -144,18 +144,6 @@ function applyBackground() {
   }
 }
 
-// jQuery: all background thumbnails do the same thing so one handler covers all of them
-  $(".bg-option").on("click", function () {
-    selectBackground($(this).data("bg"));
-  });
-
-  cardColor.addEventListener("input", applyBackground);
-  createCardButton.addEventListener("click", createCard);
-  downloadButton.addEventListener("click", downloadCard);
-
-  updatePreview();
-  applyBackground();
-
 // check the form before submitting
 
 function validateForm() {
@@ -230,9 +218,16 @@ logoUpload.addEventListener("change", showLogo);
 logoPosition.addEventListener("change", updateLogoPosition);
 
 cardColor.addEventListener("input", applyBackground);
+createCardButton.addEventListener("click", createCard);
+downloadButton.addEventListener("click", downloadCard);
 
 fontColorInput.addEventListener("input", function () {
   document.getElementById("cardContent").style.color = fontColorInput.value;
+});
+
+// jQuery: all background thumbnails do the same thing so one handler covers all of them
+$(".bg-option").on("click", function () {
+  selectBackground($(this).data("bg"));
 });
 
 }
