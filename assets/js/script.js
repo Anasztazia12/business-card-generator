@@ -218,18 +218,18 @@ function downloadCard() {
   if (validateForm() === false) {
     return;
   }
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const newTab = isIOS ? window.open("", "_blank") : null;
-
   html2canvas(cardPreview).then(function (canvas) {
-    const dataUrl = canvas.toDataURL("image/png");
-    if (isIOS && newTab) {
-      newTab.document.write('<img src="' + dataUrl + '" style="max-width:100%;display:block">');
-      setStatus("Card opened in new tab — use Share to save.");
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+      canvas.toBlob(function (blob) {
+        const file = new File([blob], "business-card.png", { type: "image/png" });
+        navigator.share({ files: [file], title: "Business Card" });
+        setStatus("Use Share to save the card.");
+      });
     } else {
       const link = document.createElement("a");
       link.download = "business-card.png";
-      link.href = dataUrl;
+      link.href = canvas.toDataURL("image/png");
       link.click();
       setStatus("Card downloaded as PNG.");
     }

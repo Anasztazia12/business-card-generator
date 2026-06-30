@@ -243,9 +243,11 @@ These wireframes were created during the planning stage to map out the layout be
 
   ```js
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const newTab = isIOS ? window.open("", "_blank") : null;
-  if (isIOS && newTab) {
-    newTab.document.write('<img src="' + dataUrl + '" style="max-width:100%;display:block">');
+  if (isIOS) {
+    canvas.toBlob(function (blob) {
+      const file = new File([blob], "business-card.png", { type: "image/png" });
+      navigator.share({ files: [file], title: "Business Card" });
+    });
   }
   ```
 
