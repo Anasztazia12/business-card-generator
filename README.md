@@ -239,6 +239,16 @@ These wireframes were created during the planning stage to map out the layout be
 ## Credits
 
 - Background images and the site logo were generated using [Microsoft Copilot Image Creator](https://copilot.microsoft.com/) (AI-generated)
+- iOS detection code in `downloadCard()` (script.js) was suggested by GitHub Copilot — detects iPad/iPhone/iPod via `navigator.userAgent` and opens the card image in a new tab for saving via the iOS Share sheet:
+
+  ```js
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const newTab = isIOS ? window.open("", "_blank") : null;
+  if (isIOS && newTab) {
+    newTab.document.write('<img src="' + dataUrl + '" style="max-width:100%;display:block">');
+  }
+  ```
+
 - All other code and content is original work by the developer
 
 ---

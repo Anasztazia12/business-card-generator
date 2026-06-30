@@ -218,11 +218,13 @@ function downloadCard() {
   if (validateForm() === false) {
     return;
   }
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const newTab = isIOS ? window.open("", "_blank") : null;
+
   html2canvas(cardPreview).then(function (canvas) {
     const dataUrl = canvas.toDataURL("image/png");
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    if (isIOS) {
-      window.open(dataUrl, "_blank");
+    if (isIOS && newTab) {
+      newTab.document.write('<img src="' + dataUrl + '" style="max-width:100%;display:block">');
       setStatus("Card opened in new tab — use Share to save.");
     } else {
       const link = document.createElement("a");
