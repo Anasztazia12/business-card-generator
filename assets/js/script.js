@@ -1,7 +1,7 @@
 // Only runs on the form.html page, which has the form.
 const businessCardForm = document.getElementById("businessCardForm");
 if (!businessCardForm) {
-  // This page has no form, so stop here
+// This page has no form, so stop here
 } else {
 
 // get the elements from HTML
@@ -212,7 +212,7 @@ function createCard() {
   cardModal.style.display = "block";
 }
 
-// download the card as a JPG image
+// download the card as a PNG image
 
 function downloadCard() {
   if (validateForm() === false) {
@@ -220,10 +220,10 @@ function downloadCard() {
   }
   html2canvas(cardPreview).then(function (canvas) {
     const link = document.createElement("a");
-    link.download = "business-card.jpg";
-    link.href = canvas.toDataURL("image/jpeg", 0.95);
+    link.download = "business-card.png";
+    link.href = canvas.toDataURL("image/png");
     link.click();
-    setStatus("Card downloaded as JPG.");
+    setStatus("Card downloaded as PNG.");
   });
 }
 
