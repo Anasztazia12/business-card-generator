@@ -70,7 +70,7 @@ I used **manual testing** for this project because most of the features are visu
 | Create card – missing name | Leave name empty, click "Create Card" → tested and works | Pass |
 | Create card – invalid email | Enter email without @, click "Create Card" → tested and works | Pass |
 | Create card – missing phone | Leave phone empty, click "Create Card" → tested and works | Pass |
-| Download – valid | Fill all required fields, click "Download as JPG" → tested and works | Pass |
+| Download – valid | Fill all required fields, click "Download as PNG" → tested and works | Pass |
 | Download – missing fields | Leave required fields empty, click "Download" → tested and works | Pass |
 
 ---
@@ -91,6 +91,11 @@ I used **manual testing** for this project because most of the features are visu
 | A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
 | Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
 | Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
+| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | Tried switching the export from `image/jpeg` to `image/png` — issue still present, so it's not a JPEG compression problem. Still investigating (likely an `html2canvas` rendering issue) |
+
+Below: the card as it looks on screen (left) vs. the same card after download (right) — the colour shift is visible.
+
+![Card as shown on screen](assets/images/card.original.png) ![Card after download (bug)](assets/images/card-jpg.png)
 
 ---
 
