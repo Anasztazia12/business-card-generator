@@ -139,7 +139,7 @@ const showLogo = function() {
 
 // background color and image
 
-function applyBackground() {
+const applyBackground = function() {
   cardPreview.style.backgroundColor = cardColor.value;
 
   if (selectedBackground === "") {
@@ -149,11 +149,11 @@ function applyBackground() {
     cardPreview.style.backgroundSize = "cover";
     cardPreview.style.backgroundPosition = "center";
   }
-}
+};
 
 // check the form before submitting
 
-function validateForm() {
+const validateForm = function() {
   let isValid = true;
   const emailValue = emailInput.value.trim();
   const emailIsValid = emailValue !== "" && emailValue.includes("@") && emailValue.includes(".");
@@ -189,9 +189,9 @@ function validateForm() {
   }
 
   return isValid;
-}
+};
 
-function createCard() {
+const createCard = function() {
   if (validateForm() === false) {
     return;
   }
@@ -212,11 +212,11 @@ function createCard() {
   }
 
   cardModal.style.display = "block";
-}
+};
 
 // download the card as a PNG image
 
-function downloadCard() {
+const downloadCard = function() {
   if (validateForm() === false) {
     return;
   }
@@ -245,14 +245,14 @@ function downloadCard() {
       setStatus("Card downloaded as PNG.");
     }
   });
-}
+};
 
 // Runs when the user clicks one of the images in the background modal
-function selectBackground(imagePath) {
+const selectBackground = function(imagePath) {
   selectedBackground = imagePath;
   applyBackground();
   hide(document.getElementById("backgroundModal"));
-}
+};
 
 // Event listeners
 

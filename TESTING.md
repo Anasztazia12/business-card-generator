@@ -114,7 +114,7 @@ Below: the card as it looks on screen (left) vs. the same card after download (r
 | [W3C HTML Validator](https://validator.w3.org/) | index.html | Pass — no errors or warnings |
 | [W3C HTML Validator](https://validator.w3.org/) | form.html | Pass — no errors or warnings |
 | [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pass — no errors. 3 warnings: CSS variables are not statically checked, `-webkit-background-clip` is a vendor extension, and `background-clip: text` is deprecated |
-| [JSHint](https://jshint.com/) | script.js | Pending |
+| [JSHint](https://jshint.com/) | script.js | Pass — initially 54 warnings, all resolved: added `/* jshint esversion: 6 */` to enable ES6 syntax, `/* globals html2canvas, $ */` to declare external libraries, and converted all function declarations inside blocks to function expressions (`const foo = function() {}`) |
 
 ![W3C HTML Validator — index.html](assets/images/index.validator.png)
 ![W3C HTML Validator — form.html](assets/images/form.validator.png)
