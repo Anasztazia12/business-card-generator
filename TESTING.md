@@ -119,3 +119,4 @@ Below: the card as it looks on screen (left) vs. the same card after download (r
 ![W3C HTML Validator — index.html](assets/images/index.validator.png)
 ![W3C HTML Validator — form.html](assets/images/form.validator.png)
 ![W3C CSS Validator — style.css](assets/images/css.validator.png)
+![JSHint — script.js](assets/images/js.validator.png)
