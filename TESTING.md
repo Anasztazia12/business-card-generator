@@ -103,7 +103,10 @@ Below: the card as it looks on screen (left) vs. the same card after download (r
 
 | Tool | File | Result |
 | --- | --- | --- |
-| [W3C HTML Validator](https://validator.w3.org/) | index.html | Pending — to be tested after deployment |
-| [W3C HTML Validator](https://validator.w3.org/) | form.html | Pending — to be tested after deployment |
-| [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pending — to be tested after deployment |
-| [JSHint](https://jshint.com/) | script.js | Pending — to be tested when JS is complete |
+| [W3C HTML Validator](https://validator.w3.org/) | index.html | Pass — no errors or warnings |
+| [W3C HTML Validator](https://validator.w3.org/) | form.html | Pass — no errors or warnings |
+| [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pending |
+| [JSHint](https://jshint.com/) | script.js | Pending |
+
+![W3C HTML Validator — index.html](assets/images/index.validator.png)
+![W3C HTML Validator — form.html](assets/images/form.validator.png)
