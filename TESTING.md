@@ -73,6 +73,14 @@ I used **manual testing** for this project because most of the features are visu
 | Download – valid | Fill all required fields, click "Download as PNG" → tested and works | Pass |
 | Download – missing fields | Leave required fields empty, click "Download" → tested and works | Pass |
 
+### 404 Page
+
+| Feature | Test | Result |
+| --- | --- | --- |
+| 404 redirect | Navigate to a non-existent URL → 404 page shows, redirects to homepage after 3 seconds | Pass |
+
+![404 page](assets/images/404.png)
+
 ---
 
 ## Bugs Found (Console Errors)
