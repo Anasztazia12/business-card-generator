@@ -219,6 +219,7 @@ function downloadCard() {
     return;
   }
   html2canvas(cardPreview).then(function (canvas) {
+    // Source: GitHub Copilot — iOS detection and Web Share API for saving image on iPhone/iPad
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     if (isIOS) {
       canvas.toBlob(function (blob) {
