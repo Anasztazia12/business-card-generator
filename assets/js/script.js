@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+/* globals html2canvas, $ */
 // Only runs on the form.html page, which has the form.
 const businessCardForm = document.getElementById("businessCardForm");
 if (!businessCardForm) {
@@ -44,21 +46,21 @@ const previewPhone = document.getElementById("previewPhone");
 
 // helper functions
 
-function show(element) {
+const show = function(element) {
   element.classList.remove("hidden");
-}
+};
 
-function hide(element) {
+const hide = function(element) {
   element.classList.add("hidden");
-}
+};
 
-function setStatus(message) {
+const setStatus = function(message) {
   statusText.textContent = message;
-}
+};
 
 // update the live preview text
 
-function updatePreview() {
+const updatePreview = function() {
   const name = nameInput.value.trim();
   const title = titleInput.value.trim();
   const company = companyInput.value.trim();
@@ -100,11 +102,11 @@ function updatePreview() {
     previewCompany.textContent = company;
     show(previewCompany);
   }
-}
+};
 // logo stuff
 
 // Move the logo to the left or right side of the card
-function updateLogoPosition() {
+const updateLogoPosition = function() {
   if (logoPosition.value === "left") {
     previewLogo.classList.remove("logo-right");
     previewLogo.classList.add("logo-left");
@@ -112,10 +114,10 @@ function updateLogoPosition() {
     previewLogo.classList.remove("logo-left");
     previewLogo.classList.add("logo-right");
   }
-}
+};
 
 // Read the chosen image file and show it on the card
-function showLogo() {
+const showLogo = function() {
   const file = logoUpload.files[0];
 
   if (file === undefined) {
@@ -133,7 +135,7 @@ function showLogo() {
   });
 
   reader.readAsDataURL(file);
-}
+};
 
 // background color and image
 
