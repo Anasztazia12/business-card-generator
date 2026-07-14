@@ -99,11 +99,11 @@ I used **manual testing** for this project because most of the features are visu
 | A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
 | Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
 | Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
-| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | The card sits inside a panel with a semi-transparent green background — `html2canvas` was picking that up and mixing it into the downloaded image. Fixed by temporarily setting the panel background to transparent before the capture, then restoring it after |
+| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | The card sits inside a panel with a semi-transparent green background — `html2canvas` was picking that up and mixing it into the downloaded image. Fixed by temporarily setting the panel background to transparent before the capture, then restoring it after. The fix works correctly on most devices but the tint is still visible on some — this appears to be device/browser dependent and remains partially unfixed |
 
-Below: the card as it looks on screen (left) vs. the same card after download (right) — the colour shift is visible.
+Below: the original preview vs the buggy download (left), and the fixed download working correctly on another device (right).
 
-![Card as shown on screen](assets/images/card.original.png) ![Card after download (bug)](assets/images/card-jpg.png)
+![Card as shown on screen](assets/images/card.original.png) ![Card after download (bug)](assets/images/card-jpg.png) ![Download working correctly on another device](assets/images/card..backrgorund.png)
 
 ---
 
