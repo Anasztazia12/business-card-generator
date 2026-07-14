@@ -107,6 +107,24 @@ Below: the original preview vs the buggy download (left), and the fixed download
 
 ---
 
+## Responsive Testing
+
+The site was tested on a laptop and a mobile phone to check layout and responsiveness across screen sizes.
+
+### Laptop — index.html (homepage)
+
+![Laptop screenshot — homepage](assets/images/laptop.screenshot%20(2).png)
+
+### Laptop — form.html (card generator)
+
+![Laptop screenshot — form](assets/images/laptop.screenshot%20(1).png)
+
+### iPhone — index.html (mobile view)
+
+![Phone screenshot — homepage](assets/images/phone.screenshoot.png)
+
+---
+
 ## Validator Testing
 
 | Tool | File | Result |
