@@ -113,7 +113,7 @@ Below: the card as it looks on screen (left) vs. the same card after download (r
 | --- | --- | --- |
 | [W3C HTML Validator](https://validator.w3.org/) | index.html | Pass — no errors or warnings |
 | [W3C HTML Validator](https://validator.w3.org/) | form.html | Pass — no errors or warnings |
-| [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pending |
+| [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pass — no errors. 3 warnings: CSS variables are not statically checked, `-webkit-background-clip` is a vendor extension, and `background-clip: text` is deprecated |
 | [JSHint](https://jshint.com/) | script.js | Pending |
 
 ![W3C HTML Validator — index.html](assets/images/index.validator.png)
