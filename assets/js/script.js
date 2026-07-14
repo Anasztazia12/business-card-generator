@@ -218,7 +218,15 @@ function downloadCard() {
   if (validateForm() === false) {
     return;
   }
+  // Source: Claude AI — temporarily strips the parent panel's semi-transparent green background
+  // and backdrop-filter before capture, to prevent html2canvas from blending them into the card image
+  const panel = cardPreview.closest(".panel");
+  panel.style.background = "transparent";
+  panel.style.backdropFilter = "none";
+
   html2canvas(cardPreview).then(function (canvas) {
+    panel.style.background = "";
+    panel.style.backdropFilter = "";
     // Source: GitHub Copilot — iOS detection and Web Share API for saving image on iPhone/iPad
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     if (isIOS) {
