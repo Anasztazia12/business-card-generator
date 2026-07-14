@@ -91,7 +91,7 @@ I used **manual testing** for this project because most of the features are visu
 | A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
 | Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
 | Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
-| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | Tried switching the export from `image/jpeg` to `image/png` — issue still present, so it's not a JPEG compression problem. Still investigating (likely an `html2canvas` rendering issue) |
+| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | The card sits inside a panel with a semi-transparent green background — `html2canvas` was picking that up and mixing it into the downloaded image. Fixed by temporarily setting the panel background to transparent before the capture, then restoring it after |
 
 Below: the card as it looks on screen (left) vs. the same card after download (right) — the colour shift is visible.
 
