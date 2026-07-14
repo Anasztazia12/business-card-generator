@@ -299,6 +299,8 @@ Testing documentation is maintained in a separate file: [TESTING.md](TESTING.md)
 3. Go to **Settings → Pages**, set source to `main` branch, click **Save**
 4. The site will be live at `https://anasztazia12.github.io/business-card-generator/`
 
+The live site is deployed here: [https://anasztazia12.github.io/business-card-generator/](https://anasztazia12.github.io/business-card-generator/)
+
 ---
 
 ## Acknowledgements
