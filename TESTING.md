@@ -130,6 +130,7 @@ I used **manual testing** for this project because most of the features are visu
 | A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
 | Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
 | Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
+| Card download not supported on iOS (iPhone/iPad) | script.js (downloadCard, downloadPDF) | On iPhone, the JPG download opens a blank tab and the PDF download does not work either. This is a known limitation of iOS Safari — the `<a download>` attribute and jsPDF's save method are not supported. No fix found; iOS download remains unsupported. |
 | Downloaded card has a greenish tint | script.js (downloadCard) | The downloaded image looks greenish instead of matching the preview. PNG was tried instead of JPG but it made no difference, so it was reverted back to JPG. This was not fixed — it only happens on my device, not on the assessor's. A PDF download option was added as an alternative, which works on all devices including iPhone. |
 
 Below: the original card vs the downloaded version with the tint (my device), and the correct result on another device.
