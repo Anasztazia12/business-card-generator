@@ -233,6 +233,7 @@ These wireframes were created during the planning stage to map out the layout be
 - [Bootstrap 5.3](https://getbootstrap.com/) — responsive grid, modal, carousel, and button components
 - [jQuery 3.7](https://jquery.com/) — DOM manipulation helper
 - [html2canvas 1.4](https://html2canvas.hertzen.com/) — client-side JPG export of the business card
+- [jsPDF 2.5](https://github.com/parallax/jsPDF) — client-side PDF export of the business card
 - [Google Fonts](https://fonts.google.com/) — Space Grotesk and Manrope typefaces
 - [GitHub Pages](https://pages.github.com/) — deployment and hosting
 
@@ -251,6 +252,7 @@ These wireframes were created during the planning stage to map out the layout be
   }
   ```
 
+- PDF download code in `downloadPDF()` (script.js) was suggested by GitHub Copilot — uses html2canvas to capture the card and jsPDF to export it as a PDF file
 - All other code and content is original work by the developer
 
 ---
