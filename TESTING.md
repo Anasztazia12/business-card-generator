@@ -71,7 +71,7 @@ I used **manual testing** for this project because most of the features are visu
 | Create card – invalid email | Enter email without @, click "Create Card" → tested and works | Pass |
 | Create card – missing phone | Leave phone empty, click "Create Card" → tested and works | Pass |
 | Download as JPG | Fill all required fields, click "Download as JPG" → card saves as JPG | Pass |
-| Download as PDF | Fill all required fields, click "Download as PDF" → print dialog opens, card can be saved as PDF | Fail — the first attempt used `window.print()` which showed a blank page before the card on laptop, and did nothing on iPhone. Switched to jsPDF library instead. |
+| Download as PDF | Fill all required fields, click "Download as PDF" → card saves as PDF | Pass — switched to jsPDF library which directly downloads the card as a PDF file without a print dialog. iOS not supported — PDF download does not work on iPhone. |
 | Download – missing fields | Leave required fields empty, click Download → validation error shown | Pass |
 
 ### 404 Page
