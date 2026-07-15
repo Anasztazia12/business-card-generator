@@ -250,14 +250,8 @@ const downloadPDF = function() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ orientation: "landscape", unit: "px", format: [canvas.width, canvas.height] });
     doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, canvas.width, canvas.height);
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    if (isIOS) {
-      doc.output("dataurlnewwindow");
-      setStatus("PDF opened — use Share to save.");
-    } else {
-      doc.save("business-card.pdf");
-      setStatus("Card downloaded as PDF.");
-    }
+    doc.save("business-card.pdf");
+    setStatus("Card downloaded as PDF.");
   });
 };
 
