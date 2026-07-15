@@ -220,8 +220,8 @@ const downloadCard = function() {
   if (validateForm() === false) {
     return;
   }
-  // Source: Claude AI — temporarily strips the parent panel's semi-transparent green background
-  // and backdrop-filter before capture, to prevent html2canvas from blending them into the card image
+  setStatus("Generating card, please wait...");
+
   const panel = cardPreview.closest(".panel");
   panel.style.background = "transparent";
   panel.style.backdropFilter = "none";
