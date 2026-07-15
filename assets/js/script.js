@@ -225,10 +225,12 @@ const downloadCard = function() {
   const panel = cardPreview.closest(".panel");
   panel.style.background = "transparent";
   panel.style.backdropFilter = "none";
+  document.body.style.backgroundImage = "none";
 
-  html2canvas(cardPreview).then(function (canvas) {
+  html2canvas(cardPreview, { backgroundColor: "#ffffff" }).then(function (canvas) {
     panel.style.background = "";
     panel.style.backdropFilter = "";
+    document.body.style.backgroundImage = "";
     const link = document.createElement("a");
     link.download = "business-card.jpg";
     link.href = canvas.toDataURL("image/jpeg");
@@ -244,7 +246,7 @@ const downloadPDF = function() {
   const panel = cardPreview.closest(".panel");
   panel.style.background = "transparent";
   panel.style.backdropFilter = "none";
-  html2canvas(cardPreview).then(function(canvas) {
+  html2canvas(cardPreview, { backgroundColor: "#ffffff" }).then(function(canvas) {
     panel.style.background = "";
     panel.style.backdropFilter = "";
     const { jsPDF } = window.jspdf;
