@@ -214,7 +214,7 @@ const createCard = function() {
   cardModal.style.display = "block";
 };
 
-// download the card as a PNG image
+// download the card as a JPG image
 
 const downloadCard = function() {
   if (validateForm() === false) {
