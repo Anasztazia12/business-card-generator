@@ -129,11 +129,11 @@ I used **manual testing** for this project because most of the features are visu
 | A closing `}` was in the wrong place so most of the code stopped running | script.js:158 | Moved the `}` to the bottom of the file so everything runs properly |
 | Some event listeners were added twice and in the wrong place | script.js | Removed the duplicates and put all listeners together at the end |
 | Background image was not showing on the card after selecting it | script.js:143 | The image loaded but was too big — added `backgroundSize` and `backgroundPosition` so it fits the card |
-| Downloaded card image has a greenish tint on dark backgrounds, doesn't match the live preview | script.js (downloadCard) | The card sits inside a panel with a semi-transparent green background — `html2canvas` was picking that up and mixing it into the downloaded image. Fixed by temporarily setting the panel background to transparent before the capture, then restoring it after. The fix works correctly on most devices but the tint is still visible on some — this appears to be device/browser dependent and remains partially unfixed |
+| Downloaded card has a greenish tint | script.js (downloadCard) | The downloaded image looks greenish instead of matching the preview. This was not fixed — it only happens on my device, not on the assessor's. The card downloads correctly on other devices. |
 
-Below: the original preview vs the buggy download (left), and the fixed download working correctly on another device (right).
+Below: the original card vs the downloaded version with the tint (my device), and the correct result on another device.
 
-![Card as shown on screen](assets/images/card-original.png) ![Card after download (bug)](assets/images/card-jpg.png) ![Download working correctly on another device](assets/images/card-downloaded.png)
+![Card as shown on screen](assets/images/card-original.png) ![Card after download — greenish tint on my device](assets/images/card-jpg.png) ![Download working correctly on another device](assets/images/card-downloaded.png)
 
 ---
 
