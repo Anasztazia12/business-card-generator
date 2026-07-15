@@ -531,7 +531,20 @@ footer {
 
 /* Source: GitHub Copilot */
 @media print {
-    body * { visibility: hidden; }
-    #businessCardPreview, #businessCardPreview * { visibility: visible; }
-    #businessCardPreview { position: fixed; top: 0; left: 0; }
+    body > * { display: none; }
+    body > main { display: block; }
+    body > main .form-panel { display: none; }
+    body > main .preview-panel {
+        display: block;
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    body > main .preview-panel h2 { display: none; }
+    body > main #businessCardPreview {
+        display: block;
+        margin: 0 auto;
+        box-shadow: none;
+    }
 }
