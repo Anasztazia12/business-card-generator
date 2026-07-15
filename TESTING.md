@@ -83,6 +83,36 @@ I used **manual testing** for this project because most of the features are visu
 
 ---
 
+## User Story Screenshots
+
+### US-01 / US-08 — Live preview updates as user types
+
+![Live preview](assets/images/live.preivew.png)
+
+### US-04 — Logo uploaded on the card
+
+![Logo on card](assets/images/logo-preview.png)
+
+### US-05 — Logo position (left and right)
+
+![Logo left](assets/images/logo-preview2.png)
+
+### US-06 — Background image selected from gallery
+
+![Background modal](assets/images/background.modal.png)
+
+![Background applied to card](assets/images/bakground-live-preview.png)
+
+![Background with logo right](assets/images/bg-logo-right.png)
+
+![Background with logo left](assets/images/bg-logo-left.png)
+
+### US-03 — Downloaded card
+
+![Downloaded card](assets/images/card.backrgorund0.png)
+
+---
+
 ## Bugs Found (Console Errors)
 
 | Error | File & Line | Fix |
