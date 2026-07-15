@@ -1,5 +1,5 @@
 /* jshint esversion: 6 */
-/* globals html2canvas, $ */
+/* globals html2canvas, $, jspdf */
 // Only runs on the form.html page, which has the form.
 const businessCardForm = document.getElementById("businessCardForm");
 if (!businessCardForm) {
@@ -237,9 +237,28 @@ const downloadCard = function() {
   });
 };
 
+// Source: GitHub Copilot
 const downloadPDF = function() {
   if (validateForm() === false) { return; }
-  window.print();
+  setStatus("Generating PDF, please wait...");
+  const panel = cardPreview.closest(".panel");
+  panel.style.background = "transparent";
+  panel.style.backdropFilter = "none";
+  html2canvas(cardPreview).then(function(canvas) {
+    panel.style.background = "";
+    panel.style.backdropFilter = "";
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ orientation: "landscape", unit: "px", format: [canvas.width, canvas.height] });
+    doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, canvas.width, canvas.height);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+      doc.output("dataurlnewwindow");
+      setStatus("PDF opened — use Share to save.");
+    } else {
+      doc.save("business-card.pdf");
+      setStatus("Card downloaded as PDF.");
+    }
+  });
 };
 
 // Runs when the user clicks one of the images in the background modal
