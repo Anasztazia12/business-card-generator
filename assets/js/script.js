@@ -246,9 +246,11 @@ const downloadPDF = function() {
   const panel = cardPreview.closest(".panel");
   panel.style.background = "transparent";
   panel.style.backdropFilter = "none";
+  document.body.style.backgroundImage = "none";
   html2canvas(cardPreview, { backgroundColor: "#ffffff" }).then(function(canvas) {
     panel.style.background = "";
     panel.style.backdropFilter = "";
+    document.body.style.backgroundImage = "";
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ orientation: "landscape", unit: "px", format: [canvas.width, canvas.height] });
     doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, canvas.width, canvas.height);
