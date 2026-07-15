@@ -229,21 +229,11 @@ const downloadCard = function() {
   html2canvas(cardPreview).then(function (canvas) {
     panel.style.background = "";
     panel.style.backdropFilter = "";
-    // Source: GitHub Copilot — iOS detection and Web Share API for saving image on iPhone/iPad
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    if (isIOS) {
-      canvas.toBlob(function (blob) {
-        const file = new File([blob], "business-card.png", { type: "image/png" });
-        navigator.share({ files: [file], title: "Business Card" });
-        setStatus("Use Share to save the card.");
-      });
-    } else {
-      const link = document.createElement("a");
-      link.download = "business-card.jpg";
-      link.href = canvas.toDataURL("image/jpeg");
-      link.click();
-      setStatus("Card downloaded as JPG.");
-    }
+    const link = document.createElement("a");
+    link.download = "business-card.jpg";
+    link.href = canvas.toDataURL("image/jpeg");
+    link.click();
+    setStatus("Card downloaded as JPG.");
   });
 };
 
