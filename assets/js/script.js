@@ -247,6 +247,11 @@ const downloadCard = function() {
   });
 };
 
+const downloadPDF = function() {
+  if (validateForm() === false) { return; }
+  window.print();
+};
+
 // Runs when the user clicks one of the images in the background modal
 const selectBackground = function(imagePath) {
   selectedBackground = imagePath;
@@ -268,6 +273,7 @@ logoPosition.addEventListener("change", updateLogoPosition);
 cardColor.addEventListener("input", applyBackground);
 createCardButton.addEventListener("click", createCard);
 downloadButton.addEventListener("click", downloadCard);
+document.getElementById("downloadPDFButton").addEventListener("click", downloadPDF);
 
 fontColorInput.addEventListener("input", function () {
   document.getElementById("cardContent").style.color = fontColorInput.value;

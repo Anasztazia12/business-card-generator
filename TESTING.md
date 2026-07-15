@@ -70,8 +70,9 @@ I used **manual testing** for this project because most of the features are visu
 | Create card – missing name | Leave name empty, click "Create Card" → tested and works | Pass |
 | Create card – invalid email | Enter email without @, click "Create Card" → tested and works | Pass |
 | Create card – missing phone | Leave phone empty, click "Create Card" → tested and works | Pass |
-| Download – valid | Fill all required fields, click "Download as PNG" → tested and works | Pass |
-| Download – missing fields | Leave required fields empty, click "Download" → tested and works | Pass |
+| Download as JPG | Fill all required fields, click "Download as JPG" → card saves as JPG | Pass |
+| Download as PDF | Fill all required fields, click "Download as PDF" → print dialog opens, card can be saved as PDF | Pass — PDF works on all devices including iPhone |
+| Download – missing fields | Leave required fields empty, click Download → validation error shown | Pass |
 
 ### 404 Page
 

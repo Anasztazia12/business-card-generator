@@ -528,3 +528,10 @@ footer {
         font-size: 0.85rem;
     }
 }
+
+/* Source: GitHub Copilot */
+@media print {
+    body * { visibility: hidden; }
+    #businessCardPreview, #businessCardPreview * { visibility: visible; }
+    #businessCardPreview { position: fixed; top: 0; left: 0; }
+}
