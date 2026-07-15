@@ -87,7 +87,7 @@ I used **manual testing** for this project because most of the features are visu
 
 ### US-01 / US-08 — Live preview updates as user types
 
-![Live preview](assets/images/live.preivew.png)
+![Live preview](assets/images/live-preview.png)
 
 ### US-04 — Logo uploaded on the card
 
@@ -95,13 +95,13 @@ I used **manual testing** for this project because most of the features are visu
 
 ### US-05 — Logo position (left and right)
 
-![Logo left](assets/images/logo-preview2.png)
+![Logo left](assets/images/logo-preview-2.png)
 
 ### US-06 — Background image selected from gallery
 
-![Background modal](assets/images/background.modal.png)
+![Background modal](assets/images/background-modal.png)
 
-![Background applied to card](assets/images/bakground-live-preview.png)
+![Background applied to card](assets/images/background-live-preview.png)
 
 ![Background with logo right](assets/images/bg-logo-right.png)
 
@@ -109,7 +109,7 @@ I used **manual testing** for this project because most of the features are visu
 
 ### US-03 — Downloaded card
 
-![Downloaded card](assets/images/card.backrgorund0.png)
+![Downloaded card](assets/images/card-downloaded.png)
 
 ---
 
@@ -133,7 +133,7 @@ I used **manual testing** for this project because most of the features are visu
 
 Below: the original preview vs the buggy download (left), and the fixed download working correctly on another device (right).
 
-![Card as shown on screen](assets/images/card.original.png) ![Card after download (bug)](assets/images/card-jpg.png) ![Download working correctly on another device](assets/images/card..backrgorund.png)
+![Card as shown on screen](assets/images/card-original.png) ![Card after download (bug)](assets/images/card-jpg.png) ![Download working correctly on another device](assets/images/card-downloaded.png)
 
 ---
 
@@ -143,15 +143,15 @@ The site was tested on a laptop and a mobile phone to check layout and responsiv
 
 ### Laptop — index.html (homepage)
 
-![Laptop screenshot — homepage](assets/images/laptop.screenshot%20(2).png)
+![Laptop screenshot — homepage](assets/images/laptop-screenshot-2.png)
 
 ### Laptop — form.html (card generator)
 
-![Laptop screenshot — form](assets/images/laptop.screenshot%20(1).png)
+![Laptop screenshot — form](assets/images/laptop-screenshot-1.png)
 
 ### iPhone — index.html (mobile view)
 
-![Phone screenshot — homepage](assets/images/phone.screenshoot.png)
+![Phone screenshot — homepage](assets/images/phone-screenshot.png)
 
 ---
 
