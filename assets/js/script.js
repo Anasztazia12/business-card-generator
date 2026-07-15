@@ -239,10 +239,10 @@ const downloadCard = function() {
       });
     } else {
       const link = document.createElement("a");
-      link.download = "business-card.png";
-      link.href = canvas.toDataURL("image/png");
+      link.download = "business-card.jpg";
+      link.href = canvas.toDataURL("image/jpeg");
       link.click();
-      setStatus("Card downloaded as PNG.");
+      setStatus("Card downloaded as JPG.");
     }
   });
 };
