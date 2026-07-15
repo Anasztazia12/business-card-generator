@@ -165,8 +165,8 @@ The site was tested on a laptop and a mobile phone to check layout and responsiv
 | [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) | style.css | Pass — no errors. 3 warnings: CSS variables are not statically checked, `-webkit-background-clip` is a vendor extension, and `background-clip: text` is deprecated |
 | [JSHint](https://jshint.com/) | script.js | Pass — initially 54 warnings, all resolved: added `/* jshint esversion: 6 */` to enable ES6 syntax, `/* globals html2canvas, $ */` to declare external libraries, and converted all function declarations inside blocks to function expressions (`const foo = function() {}`) |
 
-![W3C HTML Validator — index.html](assets/images/index.validator.png)
-![W3C HTML Validator — form.html](assets/images/form.validator.png)
-![W3C HTML Validator — 404.html](assets/images/404.validator.png)
-![W3C CSS Validator — style.css](assets/images/css.validator.png)
-![JSHint — script.js](assets/images/js.validator.png)
+![W3C HTML Validator — index.html](assets/images/index-validator.png)
+![W3C HTML Validator — form.html](assets/images/form-validator.png)
+![W3C HTML Validator — 404.html](assets/images/404-validator.png)
+![W3C CSS Validator — style.css](assets/images/css-validator.png)
+![JSHint — script.js](assets/images/js-validator.png)
