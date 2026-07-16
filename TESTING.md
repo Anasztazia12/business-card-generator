@@ -183,6 +183,8 @@ The site was tested on a laptop and a mobile phone to check layout and responsiv
 
 **JSHint custom interface screenshot:**
 
-All JavaScript code was also validated using a [custom JSHint interface application](https://anasztazia12.github.io/js-hinterface/), built during the Code Institute APIs module, which connects to the CI JSHint API to check code for syntax errors and other issues. No errors were returned.
+All JavaScript code was also validated using a custom JSHint interface application built during the Code Institute APIs module, which connects to the CI JSHint API to check code for syntax errors and other issues. No errors were returned.
+
+[https://anasztazia12.github.io/js-hinterface/](https://anasztazia12.github.io/js-hinterface/)
 
 ![JSHint interface — script.js](assets/images/js-hinterface.png)
