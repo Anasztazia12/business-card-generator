@@ -128,6 +128,8 @@ Live Preview panel (always visible on the right)
 
 - Every input triggers an instant preview update
 - Background image is selected from a modal gallery and applied immediately
+**Asynchronous behaviour:**
+
 - The download uses html2canvas which works asynchronously — it takes a moment to capture the card, so `.then()` is used to wait for it to finish before saving the file
 - Uploading a logo takes a moment to load — the card only updates once the image is fully ready, so the preview doesn't break if the file is slow to load
 
