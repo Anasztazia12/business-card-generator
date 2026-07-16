@@ -106,6 +106,7 @@ Existing tools like Canva or Adobe Express require sign-up, subscriptions, or ar
 | QR code generation | Planned for v2 |
 | Multiple card templates | Single layout for v1 |
 | Dark mode | Future enhancement |
+| iOS card download | Downloading the card doesn't work on iPhone — this is a known iOS Safari limitation and something I'd like to fix in a future version |
 
 ---
 
