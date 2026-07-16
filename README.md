@@ -235,7 +235,9 @@ These wireframes were created during the planning stage to map out the layout be
 - [html2canvas 1.4](https://html2canvas.hertzen.com/) — client-side JPG export of the business card
 - [jsPDF 2.5](https://github.com/parallax/jsPDF) — client-side PDF export of the business card
 - [Google Fonts](https://fonts.google.com/) — Space Grotesk and Manrope typefaces
+- [Git](https://git-scm.com/) — version control
 - [GitHub Pages](https://pages.github.com/) — deployment and hosting
+- [VS Code](https://code.visualstudio.com/) — code editor used for development
 
 ## Credits
 
