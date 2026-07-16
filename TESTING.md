@@ -147,6 +147,21 @@ Below: the original card vs the downloaded version with the tint (my device), an
 
 ---
 
+## Lighthouse Testing
+
+Lighthouse was run in Chrome DevTools (incognito window) on the live deployed site.
+
+| Category | Score |
+| --- | --- |
+| Performance | 97 |
+| Accessibility | 95 |
+| Best Practices | 100 |
+| SEO | 91 |
+
+![Lighthouse results](assets/images/lighthouse.png)
+
+---
+
 ## Browser Compatibility
 
 The site was tested on the following browsers:
