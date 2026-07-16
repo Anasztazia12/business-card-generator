@@ -72,6 +72,10 @@ I used **manual testing** for this project because most of the features are visu
 | Create card – missing phone | Leave phone empty, click "Create Card" → tested and works | Pass |
 | Download as JPG | Fill all required fields, click "Download as JPG" → card saves as JPG | Pass |
 | Download as PDF | Fill all required fields, click "Download as PDF" → card saves as PDF | Pass — switched to jsPDF library which directly downloads the card as a PDF file without a print dialog. iOS not supported — PDF download does not work on iPhone. |
+
+![PDF download button](assets/images/pdf-button.png)
+
+![PDF download result on laptop](assets/images/pdf-test.png)
 | Download – missing fields | Leave required fields empty, click Download → validation error shown | Pass |
 
 ### 404 Page
