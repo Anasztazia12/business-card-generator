@@ -147,6 +147,16 @@ Below: the original card vs the downloaded version with the tint (my device), an
 
 ---
 
+## Browser Compatibility
+
+The site was tested on the following browsers:
+
+| Browser | Result |
+| --- | --- |
+| Microsoft Edge | All features work correctly |
+| Mozilla Firefox | All features work correctly |
+| Google Chrome | All features work correctly |
+
 ## Responsive Testing
 
 The site was tested on a laptop and a mobile phone to check layout and responsiveness across screen sizes.
