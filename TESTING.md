@@ -118,6 +118,8 @@ Live 404 page: [https://anasztazia12.github.io/business-card-generator/404](http
 
 ![Downloaded card](assets/images/card-downloaded.png)
 
+![Downloaded card as JPG](assets/images/business-card.jpg)
+
 ---
 
 ## Bugs Found (Console Errors)
