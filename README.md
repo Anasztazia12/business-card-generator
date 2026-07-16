@@ -310,6 +310,13 @@ Testing documentation is maintained in a separate file: [TESTING.md](TESTING.md)
 
 The live site is deployed here: [https://anasztazia12.github.io/business-card-generator/](https://anasztazia12.github.io/business-card-generator/)
 
+### How to run locally
+
+1. Go to the GitHub repository and click the green **Code** button
+2. Copy the URL and run in a terminal: `git clone https://github.com/Anasztazia12/business-card-generator.git`
+3. Open the folder in VS Code
+4. Open `index.html` with the Live Server extension
+
 ---
 
 ## Acknowledgements
