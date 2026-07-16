@@ -293,6 +293,10 @@ footer {
 }
 
 
+label[for="cardColor"] {
+    margin-top: 12px;
+}
+
 #cardColor {
     min-height: 36px;
     padding: 2px 4px;
