@@ -187,4 +187,4 @@ All JavaScript code was also validated using a custom JSHint interface applicati
 
 [https://anasztazia12.github.io/js-hinterface/](https://anasztazia12.github.io/js-hinterface/)
 
-![JSHint interface — script.js](assets/images/js-hinterface.png)
+![JSHint interface — script.js](assets/images/js-hinterface1.png)
