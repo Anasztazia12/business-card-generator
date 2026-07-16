@@ -247,18 +247,7 @@ These wireframes were created during the planning stage to map out the layout be
 ## Credits
 
 - Background images and the site logo were generated using [Microsoft Copilot Image Creator](https://copilot.microsoft.com/) (AI-generated)
-- iOS detection code in `downloadCard()` (script.js) was suggested by GitHub Copilot — detects iPad/iPhone/iPod via `navigator.userAgent` and attempts to trigger the native iOS Share sheet using the Web Share API. **Note: this does not work as expected on iOS — downloading the card on iPhone/iPad is currently not supported.**
-
-  ```js
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-  if (isIOS) {
-    canvas.toBlob(function (blob) {
-      const file = new File([blob], "business-card.png", { type: "image/png" });
-      navigator.share({ files: [file], title: "Business Card" });
-    });
-  }
-  ```
-
+- A code snippet for iOS download support was suggested by GitHub Copilot, but it did not work on iPhone and was removed
 - PDF download code in `downloadPDF()` (script.js) was suggested by GitHub Copilot — uses html2canvas to capture the card and jsPDF to export it as a PDF file
 - All other code and content is original work by the developer
 
