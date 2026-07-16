@@ -157,6 +157,8 @@ These wireframes were created during the planning stage to map out the layout be
 
 ![Mobile wireframe](assets/images/mobile-wireframe.png)
 
+*A tablet layout uses the same two-column structure as desktop — no separate wireframe was created.*
+
 **Desktop layout (two-column):**
 
 ```text
