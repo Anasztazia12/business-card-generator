@@ -80,6 +80,8 @@ I used **manual testing** for this project because most of the features are visu
 | --- | --- | --- |
 | 404 redirect | Navigate to a non-existent URL → 404 page shows, redirects to homepage after 3 seconds | Pass |
 
+Live 404 page: [https://anasztazia12.github.io/business-card-generator/404](https://anasztazia12.github.io/business-card-generator/404)
+
 ![404 page](assets/images/404.png)
 
 ---
