@@ -86,7 +86,7 @@ I used **manual testing** for this project because most of the features are visu
 
 Live 404 page: [https://anasztazia12.github.io/business-card-generator/404](https://anasztazia12.github.io/business-card-generator/404)
 
-![404 page](assets/images/404.png)
+![404 page](assets/images/404-html.png)
 
 ---
 
