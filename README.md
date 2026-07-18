@@ -255,6 +255,7 @@ These wireframes were created during the planning stage to map out the layout be
 - Background images and the site logo were generated using [Microsoft Copilot Image Creator](https://copilot.microsoft.com/) (AI-generated)
 - A code snippet for iOS download support was suggested by GitHub Copilot, but it did not work on iPhone and was removed
 - PDF download code in `downloadPDF()` (script.js) was suggested by GitHub Copilot — uses html2canvas to capture the card and jsPDF to export it as a PDF file
+- Favicon files were generated using [CodeShack Favicon Generator](https://codeshack.io/favicon-generator/)
 - All other code and content is original work by the developer
 
 ---
