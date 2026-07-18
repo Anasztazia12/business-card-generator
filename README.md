@@ -245,6 +245,10 @@ These wireframes were created during the planning stage to map out the layout be
 - [Git](https://git-scm.com/) — version control
 - [GitHub Pages](https://pages.github.com/) — deployment and hosting
 - [VS Code](https://code.visualstudio.com/) — code editor used for development
+- [W3C HTML Validator](https://validator.w3.org/) — HTML validation
+- [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) — CSS validation
+- [JSHint](https://jshint.com/) — JavaScript validation
+- [Chrome DevTools / Lighthouse](https://developer.chrome.com/docs/devtools/) — performance, accessibility and SEO testing
 
 ## Credits
 
