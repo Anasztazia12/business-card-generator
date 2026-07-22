@@ -103,7 +103,7 @@ const updatePreview = function() {
     show(previewCompany);
   }
 };
-// logo stuff
+// Logo upload and position
 
 // Move the logo to the left or right side of the card
 const updateLogoPosition = function() {
